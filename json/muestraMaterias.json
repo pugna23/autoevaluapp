@@ -1,0 +1,12 @@
+{
+	"lista": [
+		   {"nombre": "Módulo B",
+			"ultFecha": "10 Apr 2014",
+			"archivo": "json/modulob.json"
+			},
+			{"nombre": "Matemática Discreta",
+			"ultFecha": "24 Feb 2015",
+			"archivo": "json/discreta.json"
+			}
+		]
+}

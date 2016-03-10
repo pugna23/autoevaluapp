@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta author="Emiliano">
+	
+	<title>AutoEvaluapp</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/preguntas.js"></script>
+	<script src="js/indexUi.js"></script>
+</head>
+<body ng-app="evalApp">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand">
+	        <i class="glyphicon glyphicon-list-alt"></i>AutoEvaluApp</a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="divMaterias" class="col-md-3 col-sm-2 sidebar" ng-controller='MatController'>
+	          <ul id="menu" class="sidebar-nav nav">
+	            <li ng-repeat="materia in materias" class="list-group"><a href="#">{{ materia.nombre }}
+	            	<span class="badge pull-right">{{ materia.ultFecha | date:'dd/MM/yy'}}</span></a>
+	            </li>
+	          </ul>
+	        </div>
+	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-4 well">
+			  <form class="form-horizontal" role="form">
+			  	<div class="form-group">
+			  		<p class="text-muted pull-left">Final: <span class="badge">17/08/15</span></p>
+			  		<p class="text-muted pull-right"><span class="badge">#082029-01</span></p>
+			  	</div>
+			  	<div class="form-group">
+			  		<h3 class="pull-center">Cuánto es 2 + 2?</h3>
+			  	</div>
+			  	<div class="form-group">
+			  		<label>K =</label>
+			  		<input class="form-control" type="text">
+			  	</div>
+			  </form>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted pull-left">Encontraste un error? Reportá un <a href="#">issue</a></p>
+			<p class="text-muted pull-right">Hecho por: Emii</p>		
+		</div>		
+	</footer>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
