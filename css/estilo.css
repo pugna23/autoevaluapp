@@ -44,6 +44,7 @@
 
 .nav > li :hover {
 	border-left: 2px solid #8080ff;
+	border-bottom: 1px solid #8080ff;
 }
 
 .list-group {
@@ -54,11 +55,24 @@
 	height: 500px;
 }
 
-.circulo {
-	height: 15px;
-	width: 15px;
-	border-radius: 100%;
-	background-color: #808080;
-	padding: 3px;
-	display: inline;
+.label-final, .label-fecha {
+	background-color: #888;
+}
+
+input[type="text"] {
+	width: 300px;
+}
+
+.col-centered {
+	text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none;
+}
+
+#divPregunta {
+	position: relative;
+	height: 200px;
 }

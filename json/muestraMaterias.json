@@ -1,12 +1,20 @@
 {
 	"lista": [
-		   {"nombre": "Módulo B",
-			"ultFecha": "10 Apr 2014",
-			"archivo": "json/modulob.json"
+		   {"nombre": "Materia 1",
+			"ultFecha": "22 May 2014",
+			"archivo": "json/mat1.json"
 			},
-			{"nombre": "Matemática Discreta",
+			{"nombre": "Materia 2",
 			"ultFecha": "24 Feb 2015",
-			"archivo": "json/discreta.json"
+			"archivo": "json/mat2.json"
+			},
+			{"nombre": "Materia 3",
+			"ultFecha": "13 Aug 2012",
+			"archivo": "json/mat3.json"
+			},
+			{"nombre": "Materia 4",
+			"ultFecha": "10 Feb 2016",
+			"archivo": "json/mat4.json"
 			}
 		]
 }
