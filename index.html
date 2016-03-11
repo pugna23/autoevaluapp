@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="ES">
 	<meta charset="utf-8">
-	<meta author="Emiliano">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<meta name="author" content="Emiliano">
+
 	<title>AutoEvaluapp</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="css/bootstrap-toggle.min.css">
 	<link rel="stylesheet" href="css/estilo.css">
 	
 	<script src="js/jquery-2.2.1.min.js"></script>
@@ -32,22 +36,30 @@
 	            </li>
 	          </ul>
 	        </div>
-	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-4 well">
+	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well">
 			  <form class="form-horizontal" role="form">
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">17/08/15</span></p>
 			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># 082029-01</span></p>
 			  	</div>
 			  	<div id="divPregunta" class="form-group">
-			  		<h3 class="col-centered">Pregunta de ejemplo?</h3>
+			  		<div id="enunciado" class="pull-left">En un péndulo de 1 m de longitud cuelga una masa de 200 gr. Si se lo suelta de la 
+				  		posición A, como indica la figura, y pasa por la posición B con una velocidad de 
+				  		1.25 m/s, calcular cuánto vale el trabajo de la fuerza de rozamiento entre las 
+				  		posiciones A y B.</div>
+				  	<img class="pull-right" src="img/ejemplo.png">
 			  	</div>
-			  	<div class="form-group col-centered">
-			  		<label class="col-md-1 control-label">Rta = </label>
-			  		<input class="col-md-2 form-control" type="text">
+			  	<div id="divRespuesta" class="form-group">
+
 			  	</div>
-			  	<div class="form-group col-centered">
-			  		<div class="btn-group-lg" aria-label="...">
+			  	<div id="divResultado" class="form-group alert alert-success" role="alert">
+			  		<span class="glyphicon glyphicon-ok-circle"></span> Correcto! <br />
+			  		This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple.			  		 
+			  	</div>
+			  	<div id="divBotones" class="form-group">
+			  		<div class="btn-group-lg col-centered">
 					  <button type="button" class="btn btn-primary">Enviar</button>
+					  <button type="button" class="btn btn-default pull-right disabled">Siguiente</button>
 					</div>
 			  	</div>
 			  </form>
@@ -61,5 +73,6 @@
 		</div>		
 	</footer>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-toggle.min.js"></script>
 </body>
 </html>
