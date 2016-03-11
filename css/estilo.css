@@ -1,3 +1,4 @@
+/*********Header*************/
 .navbar-header, .navbar-default {
 	background-color: #173B5F;
 }
@@ -11,6 +12,7 @@
 	padding-right: 5px;
 }
 
+/********Footer*************/
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -26,6 +28,7 @@
   	color: #173b5f;
 }
 
+/*******Sidebar************/
 @media (min-width: 768px) {
   .sidebar {
   	background-color: #f0f0f0;
@@ -54,8 +57,12 @@
 	margin-bottom: 2px;
 }
 
+/******Formulario**********/
 #formulario {
 	height: 500px;
+	width: 970px;
+	position: absolute;
+	margin-left: 360px;
 }
 
 .label-fecha {
@@ -65,10 +72,6 @@
 
 #labelId {
 	margin-right: 10px;
-}
-
-input[type="text"] {
-	width: 300px;
 }
 
 .col-centered {
@@ -81,6 +84,30 @@ input[type="text"] {
 }
 
 #divPregunta {
-	position: relative;
 	height: 200px;
+	text-align: center;
+}
+
+#formulario div, h4 {
+	/*border: 1px dashed black;
+	*/
+}
+
+img {
+	min-height: 180px;
+	min-width: 180px;
+	max-width: 190px;
+	max-height: 190px;
+	margin-right: 15px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+}
+
+#enunciado {
+	font-family: "Verdana";
+	font-size: 1.25em;
+	width: 70%;
+	height: 199px;
+	text-align: center;
+	margin-left: 8px;
 }

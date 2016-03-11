@@ -6,6 +6,14 @@ function Pregunta(param) {
 	this.pregunta = obj.pregunta;
 	this.respuesta = obj.respuesta;
 	this.justifica = obj.justifica;
+	
+	this.tieneImagen = function() {
+		return !(this.img === "");
+	}
+	
+	this.tieneJustificacion = function() {
+		return !(this.justifica === "");
+	}
 }
 
 function VoF(obj) {
@@ -25,7 +33,6 @@ function RtaInput(obj) {
 	this.label = obj.label;
 }
 RtaInput.prototype = Pregunta;
-
 
 function createPregunta(pregunta) {
 	switch (pregunta.tipo) {
