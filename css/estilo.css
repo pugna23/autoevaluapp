@@ -88,18 +88,21 @@
 	text-align: center;
 }
 
-#formulario div, h4 {
-	/*border: 1px dashed black;
-	*/
-}
-
-img {
+a img {
 	min-height: 180px;
 	min-width: 180px;
 	max-width: 190px;
 	max-height: 190px;
 	margin-right: 15px;
 	margin-top: 5px;
+	border: 1px solid #ccc;
+}
+
+.img-zoom {
+	max-width: 400px;
+	max-height: 400px;
+	min-width: 200px;
+	min-height: 200px;
 	border: 1px solid #ccc;
 }
 
@@ -110,4 +113,8 @@ img {
 	height: 199px;
 	text-align: center;
 	margin-left: 8px;
+}
+
+.choice {
+	height: 54px;
 }

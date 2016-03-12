@@ -7,11 +7,13 @@
 	<meta name="author" content="Emiliano">
 
 	<title>AutoEvaluapp</title>
+	<!-- Editores CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<link rel="stylesheet" href="css/bootstrap-toggle.min.css">
 	<link rel="stylesheet" href="css/estilo.css">
 	
+	<!-- Scripts JS -->
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/controllers.js"></script>
@@ -47,10 +49,19 @@
 				  		posición A, como indica la figura, y pasa por la posición B con una velocidad de 
 				  		1.25 m/s, calcular cuánto vale el trabajo de la fuerza de rozamiento entre las 
 				  		posiciones A y B.</div>
-				  	<img class="pull-right" src="img/ejemplo.png">
+				  	<a data-toggle="modal" data-target="#imgModal"><img class="pull-right" src="img/ejemplo.png"></a>
+				  	<div id="imgModal" class="modal fade" role="dialog">
+				  		<div class="modal-dialog">
+					     <div class="modal-content">
+					      <div class="modal-body">
+					        <img class="img-zoom" src="img/ejemplo.png">
+					      </div>
+					    </div>
+					  </div>
+				  	</div>
 			  	</div>
 			  	<div id="divRespuesta" class="form-group">
-
+					respuesta
 			  	</div>
 			  	<div id="divResultado" class="form-group alert alert-success" role="alert">
 			  		<span class="glyphicon glyphicon-ok-circle"></span> Correcto! <br />
@@ -69,7 +80,7 @@
 	<footer class="footer">
 		<div class="container">
 			<p class="text-muted pull-left">Encontraste un error? Reportá un <a href="https://github.com/emiiSierra/autoevaluapp/issues" target="_blank">issue</a></p>
-			<p class="text-muted pull-right">Hecho por: <a href="https://github.com/emiiSierra" target="_blank">Emii</a></p>		
+			<p class="text-muted pull-right">Por: <a href="https://github.com/emiiSierra" target="_blank">emiiSierra</a></p>		
 		</div>		
 	</footer>
 	<script src="js/bootstrap.min.js"></script>
