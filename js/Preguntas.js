@@ -22,28 +22,28 @@ function VoF(obj) {
 }
 VoF.prototype = Pregunta;
 
-function MultipleChoice(obj) {
+function ChoiceSimple(obj) {
 	Pregunta.apply(this,[obj]);
 	this.opciones = obj.opciones;
 }
-MultipleChoice.prototype = Pregunta;
+ChoiceSimple.prototype = Pregunta;
 
-function RtaInput(obj) {
+function InputSimple(obj) {
 	Pregunta.apply(this,[obj]);
 	this.label = obj.label;
 }
-RtaInput.prototype = Pregunta;
+InputSimple.prototype = Pregunta;
 
 function createPregunta(pregunta) {
 	switch (pregunta.tipo) {
-	case "MultipleChoice":
-		return new MultipleChoice(pregunta);
+	case "ChoiceSimple":
+		return new ChoiceSimple(pregunta);
 		break;
 	case "VoF":
 		return new VoF(pregunta);
 		break;
 	case "Input":
-		return new RtaInput(pregunta);
+		return new InputSimple(pregunta);
 		break;
 	}
 }

@@ -3,7 +3,7 @@
 		"id": 1,
 		"fecha": "01 Jan 2001",
 		"pregunta": "la pregunta 1?"
-		"tipo": "MultipleChoice",
+		"tipo": "ChoiceSimple",
 		"opciones": ["Opcion A", "Opcion B", "Opcion C"],
 		"respuesta": 1,
 		"justifica": "bla"
