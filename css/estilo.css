@@ -59,7 +59,7 @@
 
 /******Formulario**********/
 #formulario {
-	height: 500px;
+	height: 515px;
 	width: 970px;
 	position: absolute;
 	margin-left: 360px;
@@ -118,3 +118,4 @@ a img {
 .choice {
 	height: 54px;
 }
+

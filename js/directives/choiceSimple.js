@@ -1,6 +1,9 @@
-app.directive('choice-simple', function() {
+app.directive('choiceSimple', function() {
 	return {
 		restrict: 'E',
-		templateUrl: "choiceSimple.html"
+		scope: {
+			opciones: "="
+		},
+		templateUrl: "js/directives/choiceSimple.html"
 	}
 });

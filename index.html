@@ -58,17 +58,15 @@
 				  	</div>
 			  	</div>
 			  	<div id="divRespuesta" class="form-group">
-					<choice-simple>
-					</choice-simple>
+					<choice-simple opciones="['K = 0','K = 4','No existe K', 'Ninguna de las anteriores']"></choice-simple>
 			  	</div>
-			  	<div id="divResultado" class="form-group alert alert-success" role="alert">
-			  		<span class="glyphicon glyphicon-ok-circle"></span> Correcto! <br />
-			  		This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. This is a simple hero unit, a simple.			  		 
+			  	<div id="divResultado">
+			  		<resultado-correcto></resultado-correcto>
 			  	</div>
 			  	<div id="divBotones" class="form-group">
 			  		<div class="btn-group-lg col-centered">
-					  <button type="button" class="btn btn-primary">Enviar</button>
-					  <button type="button" class="btn btn-default pull-right disabled">Siguiente</button>
+					  <button id="btnRta" type="button" class="btn btn-primary">Enviar</button>
+					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled">Siguiente</button>
 					</div>
 			  	</div>
 			  </form>
@@ -91,7 +89,6 @@
 	<script src="js/app.js"></script>
 	
 	<!-- Sources -->
-	<script src="js/index-ui.js"></script>
 	<script src="js/Materias.js"></script>
 	<script src="js/Preguntas.js"></script>
 	
@@ -100,5 +97,7 @@
 	
 	<!-- Directives -->
 	<script src="js/directives/choiceSimple.js"></script>
+	<script src="js/directives/inputSimple.js"></script>
+	<script src="js/directives/spanResultado.js"></script>
 </body>
 </html>
