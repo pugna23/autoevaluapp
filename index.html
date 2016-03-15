@@ -28,45 +28,24 @@
 	</nav>
 	<div class="container-fluid">
 		<div class="row">
-			<div id="divMaterias" class="col-md-3 col-sm-2 sidebar" ng-controller='MatController'>
-	          <ul id="menu" class="sidebar-nav nav">
-	            <li ng-repeat="materia in materias" class="list-group"><a href="#">{{ materia.nombre }}
-	            	<span class="badge pull-right">{{ materia.ultFecha | date:'dd/MM/yy'}}</span></a>
-	            </li>
-	          </ul>
-	        </div>
+			<menu-materias></menu-materias>
 	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well">
-			  <form class="form-horizontal" role="form">
+			  <form class="form-horizontal" role="form" ng-controller='FormCtrller'>
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">17/08/15</span></p>
 			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># 082029-01</span></p>
 			  	</div>
-			  	<div id="divPregunta" class="form-group">
-			  		<div id="enunciado" class="pull-left">En un péndulo de 1 m de longitud cuelga una masa de 200 gr. Si se lo suelta de la 
-				  		posición A, como indica la figura, y pasa por la posición B con una velocidad de 
-				  		1.25 m/s, calcular cuánto vale el trabajo de la fuerza de rozamiento entre las 
-				  		posiciones A y B.</div>
-				  	<a data-toggle="modal" data-target="#imgModal"><img class="pull-right" src="img/ejemplo.png"></a>
-				  	<div id="imgModal" class="modal fade" role="dialog">
-				  		<div class="modal-dialog">
-					     <div class="modal-content">
-					      <div class="modal-body">
-					        <img class="img-zoom" src="img/ejemplo.png">
-					      </div>
-					    </div>
-					  </div>
-				  	</div>
-			  	</div>
+			  		<pregunta></pregunta>
 			  	<div id="divRespuesta" class="form-group">
 					<choice-simple opciones="['K = 0','K = 4','No existe K', 'Ninguna de las anteriores']"></choice-simple>
 			  	</div>
 			  	<div id="divResultado">
-			  		<resultado-correcto></resultado-correcto>
+			  		<resultado-incorrecto></resultado-incorrecto>
 			  	</div>
 			  	<div id="divBotones" class="form-group">
 			  		<div class="btn-group-lg col-centered">
-					  <button id="btnRta" type="button" class="btn btn-primary">Enviar</button>
-					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled">Siguiente</button>
+					  <button id="btnRta" type="button" class="btn btn-primary" ng-click="corregir()">Enviar</button>
+					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled" ng-click="continuar()">Siguiente</button>
 					</div>
 			  	</div>
 			  </form>
@@ -83,7 +62,6 @@
 	<!-- Scripts -->
 	<!-- Herramientas -->
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap-toggle.min.js"></script>
 	
 	<!-- Modules -->
 	<script src="js/app.js"></script>
@@ -93,11 +71,17 @@
 	<script src="js/Preguntas.js"></script>
 	
 	<!-- Controllers -->
-	<script src="js/controllers/MateriaController.js"></script>
+	<script src="js/controllers/FormController.js"></script>
+	
+	<!-- Services -->
+	<script src="js/services/MateriaFactory.js"></script>
 	
 	<!-- Directives -->
+	<script src="js/directives/MenuMaterias.js"></script>
+	<script src="js/directives/pregunta.js"></script>
 	<script src="js/directives/choiceSimple.js"></script>
 	<script src="js/directives/inputSimple.js"></script>
 	<script src="js/directives/spanResultado.js"></script>
+	
 </body>
 </html>
