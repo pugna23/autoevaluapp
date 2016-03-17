@@ -1,7 +1,9 @@
 app.service('materiaService', [function() {
 	var actual = {
-			nombre: "dummy"
+			nombre: "dummy",
+			codigo: "099540"
 	};
+	
 	return {
 		getActual: function() {
 			return actual;
@@ -9,6 +11,7 @@ app.service('materiaService', [function() {
 		
 		setActual: function(m) {
 			actual = m;
+			console.log(actual);
 		}
 	};
 	

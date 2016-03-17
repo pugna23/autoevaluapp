@@ -14,6 +14,10 @@ function Pregunta(param) {
 	this.tieneJustificacion = function() {
 		return !(this.justifica === "");
 	}
+	
+	this.esCorrecto = function(contesta) {
+		return (contesta === this.respuesta);
+	}
 }
 
 function VoF(obj) {

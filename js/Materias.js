@@ -1,5 +1,6 @@
 function Materia(obj) {
 	this.nombre = obj.nombre;
+	this.codigo = obj.codigo;
 	this.archivo = obj.archivo;
 	this.ultFecha = new Date(obj.ultFecha);
 	this.preguntas = [

@@ -32,15 +32,16 @@
 	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well">
 			  <form class="form-horizontal" role="form" ng-controller='FormCtrller'>
 			  	<div id="datosPregunta" class="form-group">
-			  		<p class="text-muted pull-left"><span class="label label-fecha">17/08/15</span></p>
-			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># 082029-01</span></p>
+			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
+			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaService.getActual.codigo}}-{{question.id | digits}}</span></p>
 			  	</div>
 			  		<pregunta></pregunta>
 			  	<div id="divRespuesta" class="form-group">
-					<choice-simple opciones="['K = 0','K = 4','No existe K', 'Ninguna de las anteriores']"></choice-simple>
+					<choice-simple opciones="question.opciones"></choice-simple>
 			  	</div>
 			  	<div id="divResultado">
-			  		<resultado-incorrecto></resultado-incorrecto>
+			  		<resultado-incorrecto class="sr-only"></resultado-incorrecto>
+			  		<resultado-correcto class="sr-only"></resultado-correcto>
 			  	</div>
 			  	<div id="divBotones" class="form-group">
 			  		<div class="btn-group-lg col-centered">
@@ -78,6 +79,7 @@
 	
 	<!-- Directives -->
 	<script src="js/directives/MenuMaterias.js"></script>
+	<script src="js/directives/imagenModal.js"></script>
 	<script src="js/directives/pregunta.js"></script>
 	<script src="js/directives/choiceSimple.js"></script>
 	<script src="js/directives/inputSimple.js"></script>
