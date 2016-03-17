@@ -2,7 +2,6 @@ function Materia(obj) {
 	this.nombre = obj.nombre;
 	this.codigo = obj.codigo;
 	this.archivo = obj.archivo;
-	this.ultFecha = new Date(obj.ultFecha);
 	this.preguntas = [
 	                  {
 	                	"id": "00001",
@@ -14,7 +13,7 @@ function Materia(obj) {
 	              		"justifica": "bla"
 	                  }, {
 	              		"id": "00002",
-	            		"fecha": "13 Feb 2010",
+	            		"fecha": "12 Aug 2016",
 	            		"img": "img/p2.png",
 	            		"tipo": "VoF",
 	            		"pregunta": "la pregunta 2?",
@@ -27,8 +26,16 @@ function Materia(obj) {
 	              		"label": "K",
 	              		"respuesta": "8"  
 	                  }];
+	
+	/***/
+	this.cantEjercicios = this.preguntas.length;
+	this.ultFecha = jQuery.map(this.preguntas, function(p, index) {
+		return new Date(p.fecha)
+	}).sort(function(a,b) {return b-a})[0];
+	
+	
 	this.selectPregunta = function() {
-		return this.preguntas[Math.floor(Math.random()*(this.preguntas.length))]
+		return this.preguntas[Math.floor(Math.random()*(this.cantEjercicios))]
 	};
 }
 

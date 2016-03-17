@@ -33,11 +33,11 @@
 			  <form class="form-horizontal" role="form" ng-controller='FormCtrller'>
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
-			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaService.getActual.codigo}}-{{question.id | digits}}</span></p>
+			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.getActual.codigo}}-{{question.id | digits}}</span></p>
 			  	</div>
 			  		<pregunta></pregunta>
 			  	<div id="divRespuesta" class="form-group">
-					<choice-simple opciones="question.opciones"></choice-simple>
+					<input-simple></input-simple>
 			  	</div>
 			  	<div id="divResultado">
 			  		<resultado-incorrecto class="sr-only"></resultado-incorrecto>

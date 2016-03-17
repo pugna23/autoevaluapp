@@ -1,7 +1,9 @@
 <div id="divMaterias" class="col-md-3 col-sm-2 sidebar">
-    <ul id="menu" class="sidebar-nav nav">
-      <li ng-repeat="materia in materias" class="list-group" data-ng-click="seleccionar(materia)"><a>{{ materia.nombre }}
-      	<span class="badge pull-right">{{ materia.ultFecha | date:'dd/MM/yy'}}</span></a>
-      </li>
-    </ul>
+	<div id="listaMaterias">
+	    <ul id="menu" class="sidebar-nav nav">
+	      <li ng-repeat="materia in materias" class="list-group" data-ng-click="seleccionar(materia)"><a>{{ materia.nombre }}
+	      	<span class="badge pull-right">{{ materia.ultFecha | date:'dd/MM/yy'}}</span></a>
+	      </li>
+	    </ul>
+    </div>
 </div>

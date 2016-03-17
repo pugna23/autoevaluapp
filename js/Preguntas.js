@@ -11,10 +11,6 @@ function Pregunta(param) {
 		return !(this.img === "");
 	}
 	
-	this.tieneJustificacion = function() {
-		return !(this.justifica === "");
-	}
-	
 	this.esCorrecto = function(contesta) {
 		return (contesta === this.respuesta);
 	}
@@ -35,6 +31,10 @@ ChoiceSimple.prototype = Pregunta;
 function InputSimple(obj) {
 	Pregunta.apply(this,[obj]);
 	this.label = obj.label;
+	
+	this.esCorrecto = function(rta) {
+		return (this.respuesta.toUpperCase() === rta.toUpperCase());
+	}
 }
 InputSimple.prototype = Pregunta;
 

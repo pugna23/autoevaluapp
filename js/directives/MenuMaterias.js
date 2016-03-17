@@ -2,7 +2,9 @@ app.directive("menuMaterias",function() {
 	return {
 		restrict: 'E',
 		templateUrl: "js/directives/menuMaterias.html",
-		controller: function($scope, $http, materiaService) {
+		controller: function($scope, $http, materiaservice) {
+			
+			$scope.materiaSeleccionada = materiaservice;
 			
 			$http.get('json/muestraMaterias.json').then(function(response) {
 				var list = response.data.lista;
@@ -10,7 +12,7 @@ app.directive("menuMaterias",function() {
 			});
 			
 			$scope.seleccionar = function(materia) {
-				materiaService.setActual(materia);
+				$scope.materiaSeleccionada.setActual(materia);
 				$("#divMaterias").hide("slow");
 			}
 		},

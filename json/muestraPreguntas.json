@@ -5,7 +5,7 @@
 		"pregunta": "la pregunta 1?",
 		"tipo": "ChoiceSimple",
 		"opciones": ["Opcion A", "Opcion B", "Opcion C"],
-		"respuesta": 1,
+		"respuesta": "Opcion A",
 		"justifica": "bla"
 	},
 	"p2" : {
@@ -14,7 +14,7 @@
 		"img": "img/p2.png",
 		"tipo": "VoF",
 		"pregunta": "la pregunta 2?",
-		"respuesta": true
+		"respuesta": "Falso"
 	}
 	"p3" : {
 		"id": 3,
