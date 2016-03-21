@@ -1,5 +1,3 @@
-<div class="btn-group btn-group-justified" data-toggle="buttons">
-<label class="btn btn-default choice" ng-repeat="opt in question.opciones">
+<label class="btn btn-default choice" ng-repeat="opt in question.opciones" ng-style="{width: {{ question.optionLength() }} + '%'}">
 		<input type="radio" ng-model='$parent.answered' ng-value='opt'> {{opt}}
 </label>
-</div>

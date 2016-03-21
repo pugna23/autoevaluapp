@@ -21,11 +21,17 @@ function MultipleChoice(obj) {
 	
 	this.anularRespuestas = function() {
 		$(".choice").addClass("disabled");
+		$("input[type='radio']").attr("disabled",true);
 	};
 	
 	this.aceptarRespuestas = function() {
 		$(".choice").removeClass("disabled");
+		$("input[type='radio']").attr("disabled",false);
 	};
+	
+	this.optionLength = function() {
+		return (100 / this.opciones.length);
+	}
 }
 MultipleChoice.prototype = Pregunta;
 
