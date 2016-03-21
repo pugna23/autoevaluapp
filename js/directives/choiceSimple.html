@@ -1,5 +1,5 @@
-<div class="btn-group btn-group-justified" role="group">
-	<div ng-repeat="opt in opciones" class="btn-group" role="group">
-	 	<button type="button" class="btn btn-default choice" ng-click="contestar(opt)">{{opt}}</button>
-	</div>
+<div class="btn-group btn-group-justified" data-toggle="buttons">
+<label class="btn btn-default choice" ng-repeat="opt in question.opciones">
+		<input type="radio" ng-model='$parent.answered' ng-value='opt'> {{opt}}
+</label>
 </div>

@@ -30,14 +30,14 @@
 		<div class="row">
 			<menu-materias></menu-materias>
 	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well">
-			  <form class="form-horizontal" role="form" ng-controller='FormCtrller'>
+			  <form class="form-horizontal" role="form" ng-controller='FormCtrller as ctrl'>
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
-			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.getActual.codigo}}-{{question.id | digits}}</span></p>
+			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.getActual.codigo}}-{{ctrl.question.id | digits}}</span></p>
 			  	</div>
 			  		<pregunta></pregunta>
 			  	<div id="divRespuesta" class="form-group">
-					<input-simple></input-simple>
+					<choice-simple></choice-simple>
 			  	</div>
 			  	<div id="divResultado">
 			  		<resultado-incorrecto class="sr-only"></resultado-incorrecto>

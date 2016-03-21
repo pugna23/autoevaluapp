@@ -16,17 +16,30 @@ function Pregunta(param) {
 	}
 }
 
-function VoF(obj) {
+function MultipleChoice(obj) {
 	Pregunta.apply(this,[obj]);
+	
+	this.anularRespuestas = function() {
+		$(".choice").addClass("disabled");
+	};
+	
+	this.aceptarRespuestas = function() {
+		$(".choice").removeClass("disabled");
+	};
+}
+MultipleChoice.prototype = Pregunta;
+
+function VoF(obj) {
+	MultipleChoice.apply(this,[obj]);
 	this.opciones = ["Verdadero","Falso"];
 }
-VoF.prototype = Pregunta;
+VoF.prototype = MultipleChoice;
 
 function ChoiceSimple(obj) {
-	Pregunta.apply(this,[obj]);
+	MultipleChoice.apply(this,[obj]);
 	this.opciones = obj.opciones;
 }
-ChoiceSimple.prototype = Pregunta;
+ChoiceSimple.prototype = MultipleChoice;
 
 function InputSimple(obj) {
 	Pregunta.apply(this,[obj]);
@@ -34,6 +47,14 @@ function InputSimple(obj) {
 	
 	this.esCorrecto = function(rta) {
 		return (this.respuesta.toUpperCase() === rta.toUpperCase());
+	}
+	
+	this.anularRespuestas = function() {
+		$("#divRespuesta input[type='text']").prop('readonly',true);
+	}
+	
+	this.aceptarRespuestas = function() {
+		$("#divRespuesta input[type='text']").prop('readonly',false);
 	}
 }
 InputSimple.prototype = Pregunta;

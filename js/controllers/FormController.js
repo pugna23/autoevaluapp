@@ -1,17 +1,17 @@
 app.controller('FormCtrller', ['$scope','materiaservice', function($scope, materiaservice) {
 	
 	$scope.materiaSeleccionada = materiaservice;
-	$scope.answered = null;
+	$scope.answered = '';
 	
-	$scope.question = new InputSimple({
+	$scope.question = new ChoiceSimple({
 		"id": 8,
-		"fecha": "01 Jan 2001",
+		"fecha": "01 Nov 2014",
 		"pregunta": "la pregunta 1?",
 		"img": "img/ecdefault.jpg",
-		"tipo": "Input",
-		"label": "K =",
-		"respuesta": "Cache",
-		"justifica": "blabla"
+		"tipo": "ChoiceSimple",
+		"opciones": ["Opcion A", "Opcion B", "Opcion C", "Ninguna de las anteriores"],
+		"respuesta": "Opcion A",
+		"justifica": "blabla",
 	});
 	
 	$scope.cargarEnunciado = function() {
@@ -24,17 +24,11 @@ app.controller('FormCtrller', ['$scope','materiaservice', function($scope, mater
 		}
 	}
 	
-	$scope.contestar = function(rta) {
-		$scope.answered = rta;
-		console.log("Contestó: " + $scope.answered);
-	}
-	
 	$scope.corregir = function() {
 		$("#btnSiguiente").removeClass("disabled");
 		$("#btnRta").addClass("disabled");
-		$(".choice").addClass("disabled");
-		$("#divRespuesta input[type='text']").prop('readonly',true);
-
+		$scope.question.anularRespuestas();
+		
 		console.log("Respuesta final: " + $scope.answered);
 		if ($scope.question.esCorrecto($scope.answered)) {
 			$("resultado-correcto").removeClass("sr-only");
@@ -44,13 +38,20 @@ app.controller('FormCtrller', ['$scope','materiaservice', function($scope, mater
 	};
 	
 	$scope.continuar = function() {
-		$scope.answered = null;
+		$scope.answered = '';
 		$("#btnRta").removeClass("disabled");
 		$("#btnSiguiente").addClass("disabled");
-		$(".choice").removeClass("disabled");
-		$("#divRespuesta input[type='text']").prop('readonly',false);
+		$scope.question.aceptarRespuestas();
 		$("resultado-correcto, resultado-incorrecto").addClass("sr-only");
 	};
 	
+	$scope.$watch('answered', function(nuevo) {
+		console.log(nuevo);
+	});
+	
+	$scope.specialValue = 'yellow';
+	$scope.hello = function() {
+		alert('hola');
+	}
 	
 }]);
