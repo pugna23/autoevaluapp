@@ -33,7 +33,7 @@
 			  <form class="form-horizontal" role="form" ng-controller='FormCtrller as ctrl'>
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
-			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.getActual.codigo}}-{{question.id | digits}}</span></p>
+			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.Actual.codigo}}-{{question.id | digits}}</span></p>
 			  	</div>
 			  		<pregunta></pregunta>
 			  	<div id="divRespuesta" class="form-group">
@@ -45,8 +45,9 @@
 			  	</div>
 			  	<div id="divBotones" class="form-group">
 			  		<div class="btn-group-lg col-centered">
+			  		  <span id="labelId" class="label label-success pull-left">{{correctas}} / {{contestadas}}</span>
 					  <button id="btnRta" type="button" class="btn btn-primary" ng-click="corregir()">Enviar</button>
-					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled" ng-click="continuar()">Siguiente</button>
+					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled" ng-click="continuar()" disabled>Siguiente</button>
 					</div>
 			  	</div>
 			  </form>

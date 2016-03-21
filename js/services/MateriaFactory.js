@@ -1,16 +1,17 @@
 app.factory('materiaservice', [function() {
-	var actual = {
+	var Actual = {
 			nombre: "dummy",
 			codigo: "099540"
 	};
 	
+	function setActual(m) {
+		Actual = m;
+		console.log(Actual);
+	};
+	
 	return {
-		getActual: actual,
-		
-		setActual: function(m) {
-			actual = m;
-			console.log(actual);
-		}
+		Actual: Actual,
+		set: setActual
 	};
 	
 }]);

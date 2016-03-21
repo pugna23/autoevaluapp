@@ -12,6 +12,10 @@
 	padding-right: 5px;
 }
 
+.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover {
+	color:#eee;
+}
+
 /********Footer*************/
 .footer {
 	position: absolute;

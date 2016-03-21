@@ -12,7 +12,7 @@ app.directive("menuMaterias",function() {
 			});
 			
 			$scope.seleccionar = function(materia) {
-				$scope.materiaSeleccionada.setActual(materia);
+				$scope.materiaSeleccionada.set(materia);
 				$("#divMaterias").hide("slow");
 			}
 		},
