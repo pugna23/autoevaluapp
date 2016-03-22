@@ -32,6 +32,9 @@ function MultipleChoice(obj) {
 	this.optionLength = function() {
 		return (100 / this.opciones.length);
 	}
+	
+	this.formRta = "<choice-simple></choice-simple>";
+	
 }
 MultipleChoice.prototype = Pregunta;
 
@@ -47,34 +50,39 @@ function ChoiceSimple(obj) {
 }
 ChoiceSimple.prototype = MultipleChoice;
 
-function InputSimple(obj) {
+function InputSimple(param) {
+	var obj = $.extend({"label": "Respuesta"},param);
 	Pregunta.apply(this,[obj]);
 	this.label = obj.label;
 	
 	this.esCorrecto = function(rta) {
 		return (this.respuesta.toUpperCase() === rta.toUpperCase());
-	}
+	};
 	
 	this.anularRespuestas = function() {
 		$("#divRespuesta input[type='text']").prop('readonly',true);
-	}
+	};
 	
 	this.aceptarRespuestas = function() {
 		$("#divRespuesta input[type='text']").prop('readonly',false);
-	}
+	};
+	
+	this.formRta = "<input-simple></input-simple>";
 }
 InputSimple.prototype = Pregunta;
 
 function createPregunta(pregunta) {
-	switch (pregunta.tipo) {
-	case "ChoiceSimple":
+	switch (pregunta.tipo.toUpperCase()) {
+	case "CHOICESIMPLE":
 		return new ChoiceSimple(pregunta);
 		break;
-	case "VoF":
+	case "VOF":
 		return new VoF(pregunta);
 		break;
-	case "Input":
+	case "INPUT":
 		return new InputSimple(pregunta);
 		break;
+	default:
+		return new InputSimple(pregunta);
 	}
 }

@@ -19,6 +19,10 @@
 			"codigo": "998771",
 			"ultFecha": "10 Feb 2016",
 			"archivo": "json/mat4.json"
+			},
+			{"nombre": "Matemática Superior",
+			"codigo": "082032",
+			"archivo": "json/superior.json"
 			}
 		]
 }

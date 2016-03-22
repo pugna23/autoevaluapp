@@ -1,0 +1,198 @@
+{
+	"p1": {
+		"id": 1,
+		"fecha": "01 dec 2015",
+		"pregunta": "Calcular el valor de la integral calculada por Transf. De Laplace.",
+		"tipo": "Input",
+		"label": "Respuesta",
+		"respuesta": 0.24,
+		"img": "img/082032-01.png"
+	},
+	"p2": {
+		"id" : 2,
+		"fecha": "1 dec 2015",
+		"tipo": "input",
+		"pregunta": "La transferencia G(s) corresponde a un sistema estable solamente con un valor de la constante real K. Cuál es el valor de K?",
+		"label": "K = ",
+		"respuesta": 2,
+		"img": "img/082032-02.png"
+	},
+	"p3": {
+		"id": 3,
+		"fecha": "1 dec 2015",
+		"tipo": "input",
+		"pregunta": "Al resolver la integral <img src='img/082032-03.png'> por el método de trapecios se obtiene un valor .......... al exacto.",
+		"respuesta": "mayor"
+	},
+	"p4" : {
+		"id" : 4,
+		"fecha": "22 dec 2015",
+		"tipo": "Input",
+		"pregunta": "Dada f(t), para que el valor medio de dicha función sea 4, el valor de k perteneciente a R debe ser:",
+		"label": "k = ",
+		"respuesta": 4.5,
+		"img": "img/082032-04.png"
+	},
+	"p5": {
+		"id": 5,
+		"fecha": "22 dec 2015",
+		"tipo": "ChoiceSimple",
+		"pregunta": "La serie trigonométrica de Fourier de la f(t) (con cualquier k perteneciente a R) es solo de:",
+		"opciones": ["Senos", "Cosenos", "Frecuencias impares"],
+		"respuesta": "Cosenos",
+		"img": "img/082032-04.png"
+	},
+	"p6" : {
+		"id": 6,
+		"fecha": "22 dec 2015",
+		"tipo": "ChoiceSimple",
+		"pregunta": "Dada <img src='img/082032-06.png'> y las proposiciones r, s, t, u, siendo: <br> p: Es posible resolverla por Simpson con h=0,3; <br> q: Al resolverla por Trapecios con h=0,1 se obtiene un valor menor al exacto; <br> La única verdadera es:",
+		"opciones": ["r: not(p) y q", "s: not(p) y not(q)", "t: p y not(q)", "u: p y q"],
+		"respuesta": "s: not(p) y not(q)"
+	},
+	"p7" : {
+		"id": 7,
+		"fecha": "14 Feb 2013",
+		"tipo": "Input",
+		"pregunta": "Al resolver la integral I por Trapecios con h=0.1, puede asegurarse un error menor que:",
+		"label": "| E | ≤ ",
+		"respuesta": 0.00148753,
+		"img": "img/082032-07.png"
+	},
+	"p8" : {
+		"id": 8,
+		"img": "img/082032-08.png",
+		"fecha": "17 Jul 2014",
+		"pregunta": "El valor principal del complejo z es:",
+		"tipo": "choicesimple",
+		"opciones": ["Imaginario puro", "Real positivo", "Real negativo", "Complejo no real ni imaginario"],
+		"respuesta": "Real positivo"
+	},
+	"p9": {
+		"id": 9,
+		"img": "img/082032-09.png",
+		"fecha": "17 jul 2014",
+		"pregunta": "Los coeficientes de la Serie Exponencial de Fourier de f(t) son:",
+		"tipo": "choicesimple",
+		"opciones": ["Todos reales","Todos imaginarios","Uno real y el resto imaginarios","Ninguno de los anteriores"],
+		"respuesta": "Todos reales"
+	},
+	"p10": {
+		"id": 10,
+		"img": "img/082032-10.png",
+		"fecha": "17 jul 2014",
+		"pregunta": "El valor de la integral calculada con transformada de Laplace es:",
+		"tipo": "input",
+		"respuesta": -0.4
+	},
+	"p11": {
+		"id": 11,
+		"img": "img/082032-11.png",
+		"fecha": "17 jul 2014",
+		"pregunta": "Si un sistema responde a la entrada x(t) de forma acotada, entonces:",
+		"tipo": "choicesimple",
+		"opciones": ["El sistema seguro es estable","El sistema puede ser estable o inestable","El sistema seguro es inestable","El sistema es marginalmente estable"],
+		"respuesta": "El sistema puede ser estable o inestable"
+	},
+	"p12": {
+		"id": 12,
+		"fecha": "17 jul 2014",
+		"pregunta": "No existe polinomio de grado 2 que pase por los puntos (0, 2), (2, 6), (4, a) y (6, b)",
+		"tipo": "choicesimple",
+		"opciones": ["Sólo si a=10 y b=14","Sólo si b – 3a + 16 = 0","Sólo si b – 3a + 16 ≠0", "Ninguna de las anteriores"],
+		"respuesta": "Ninguna de las anteriores",
+		"justifica": "Se cumple si a=10 y b=14 ó si b – 3a + 16 ≠ 0."
+	},
+	"p13": {
+		"id": 13,
+		"fecha": "5 aug 2010",
+		"pregunta": "La superposición de dos ondas senoidales de igual frecuencia y distinta amplitud, PUEDE ser:",
+		"tipo": "choicesimple",
+		"opciones": ["De distinta frecuencia de las dadas","De amplitud igual a la suma de ambas amplitudes", "Una función no senoidal", "Ninguna de las anteriores"],
+		"respuesta": "De amplitud igual a la suma de ambas amplitudes",
+		"justifica": "Si están en fase, la amplitud es la suma de las amplitudes."
+	},
+	"p14": {
+		"id": 14,
+		"fecha": "5 aug 2010",
+		"pregunta": "Sea f(t) con periodo T=2. El desarrollo en Serie exponencial de Fourier tiene sus coeficientes:",
+		"tipo": "choicesimple",
+		"img": "img/082032-14.png",
+		"opciones": ["Todos reales","Ninguno real","Todos imaginarios puros","Ninguna de las anteriores"],
+		"respuesta": "Ninguna de las anteriores",
+		"justifica": "Por ser suma de una función impar más una constante, la SEF tiene un coeficiente real (el c0) y los demás imaginarios puros."
+	},
+	"p15": {
+		"id": 15,
+		"fecha": "5 aug 2010",
+		"pregunta": "Para que la transferencia  G(s) corresponda a un sistema estable, entonces:",
+		"tipo": "choicesimple",
+		"opciones": ["k = 0", "k = 8", "k puede tomar cualquier valor real", "No existe valor de k perteneciente a R"],
+		"respuesta": "k = 8",
+		"img": "img/082032-15.png",
+		"justifica": "Para que sea estable, 2 no debe ser polo, entonces el factor (s-2) del denominador debe anularse con el mismo en el numerador, o sea que 2 debe ser raíz del numerador ->  4-2k+12=0  ->  k=8"
+	},
+	"p16": {
+		"id": 16,
+		"fecha": "26 jul 2012",
+		"pregunta": "Dados 40 puntos (xi ; yi) todos con abscisas distintas, y sabiendo que por 30 de ellos pasa un polinomio de grado 20, puede asegurarse que por los 40 puntos NO pasa polinomio de:",
+		"tipo": "choicesimple",
+		"opciones": ["Grado 15", "Grado 20", "Grado 35", "Grado 40"],
+		"respuesta": "Grado 15"
+	},
+	"p17": {
+		"id": 17,
+		"fecha": "26 jul 2012",
+		"pregunta": "Dadas las funciones g1(x) y g2(x), para hallar la raíz cuadrada de 40 por el método de punto fijo, converge:",
+		"tipo": "choicesimple",
+		"opciones": ["Solo con g1","Solo con g2","Con ambas","Con ninguna"],
+		"respuesta": "Con ambas",
+		"img": "img/082032-17.png"
+	},
+	"p18": {
+		"id": 18,
+		"fecha": "26 jul 2012",
+		"pregunta": "Si al resolver la integral por Trapecios tomando 20 subintervalos se obtiene un error del orden de 0.1, entonces si se toman 40 subintervalos, el error aproximadamente va a ser:",
+		"tipo": "choicesimple",
+		"opciones": [0.01,0.05,0.025,0.0001],
+		"respuesta": 0.025,
+		"img": "img/082032-18.png"
+	},
+	"p19": {
+		"id": 19,
+		"fecha": "08 aug 2013",
+		"img": "img/082032-19.png",
+		"pregunta": "¿Cómo es el conjunto A?",
+		"tipo": "choicesimple",
+		"opciones": ["A es conjunto vacío","Para todo z perteneciente a A : z es imaginario puro","Existe un z : z perteneciente a R y a A","Ninguna de las anteriores"],
+		"respuesta": "Existe un z : z perteneciente a R y a A"
+	},
+	"p20": {
+		"id": 20,
+		"fecha": "08 aug 2013",
+		"pregunta": "La razón por la cual al utilizar los polinomios de Legendre para aproximar una función por un polinomio de grado n en un intervalo dado, no se necesita resolver sistema de ecuaciones alguno, es que dichos polinomios son:",
+		"tipo": "choicesimple",
+		"opciones":["De norma unitaria","Ortogonales en [-1;1]","Base del conjunto de polinomios de grado <= n","Ninguna de las anteriores"],
+		"respuesta": "Ortogonales en [-1;1]"
+	},
+	"p21": {
+		"id": 21,
+		"fecha": "08 aug 2013",
+		"pregunta": "¿Cuál de estos sistemas es posible resolver por Gauss-Seidel?",
+		"tipo": "choicesimple",
+		"img": "img/082032-21.png",
+		"opciones": ["Solamente el primero","Solo el segundo","Ambos","Ninguno de los dos"],
+		"respuesta": "Solamente el primero",
+		"justifica": "En el primero, si permutamos filas ( 2 – 3 – 1) queda diagonal dominante, pero en el segundo no hay forma de lograrlo pues tanto en la primer fila como en la tercera, el mayor elemento es el del medio."
+	},
+	"p22": {
+		"id": 22,
+		"fecha": "8 aug 2013",
+		"pregunta": "¿Cómo es la fórmula wi+1?",
+		"tipo": "choicesimple",
+		"img": "img/082032-22.png",
+		"opciones": ["De paso simple","De 3 pasos","Implícita","Etapa predictora"],
+		"respuesta":"Etapa predictora",
+		"justifica": "La fórmula dada es de un método de 4 pasos (ya que utiliza 4 anteriores); es explícita pues no necesita el mismo wi+1 que calcula, por eso puede usarse como etapa predictora."
+	}
+}

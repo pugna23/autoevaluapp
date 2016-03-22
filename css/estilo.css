@@ -93,9 +93,9 @@
 }
 
 a img {
-	min-height: 180px;
-	min-width: 180px;
-	max-width: 190px;
+	min-height: 75px;
+	min-width: 190px;
+	max-width: 205px;
 	max-height: 190px;
 	margin-right: 15px;
 	margin-top: 5px;
@@ -103,10 +103,10 @@ a img {
 }
 
 .img-zoom {
-	max-width: 400px;
+	max-width: 1040px;
 	max-height: 400px;
-	min-width: 200px;
-	min-height: 200px;
+	min-width: 195px;
+	min-height: 75px;
 	border: 1px solid #ccc;
 }
 
