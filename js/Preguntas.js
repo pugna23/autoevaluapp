@@ -8,7 +8,7 @@ function Pregunta(param) {
 	this.justifica = obj.justifica;
 	
 	this.tieneImagen = function() {
-		return !(this.img === "");
+		return !(this.img === "" || this.img === null || this.img === '');
 	}
 	
 	this.esCorrecto = function(contesta) {
@@ -56,7 +56,8 @@ function InputSimple(param) {
 	this.label = obj.label;
 	
 	this.esCorrecto = function(rta) {
-		return (this.respuesta.toUpperCase() === rta.toUpperCase());
+		if ($.isNumeric(rta)) { return (this.respuesta == rta); }
+		else return (this.respuesta.toUpperCase() === rta.toUpperCase());
 	};
 	
 	this.anularRespuestas = function() {

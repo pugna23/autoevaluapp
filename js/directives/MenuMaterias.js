@@ -6,7 +6,7 @@ app.directive("menuMaterias",function() {
 			
 			$scope.seleccionada = materiaservice;
 			
-			$http.get('json/muestraMaterias.json').then(function(response) {
+			$http.get('json/materias.json').then(function(response) {
 				var list = response.data.lista;
 				$scope.materias = getAllMaterias(list);
 			});

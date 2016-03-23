@@ -4,14 +4,13 @@ function Materia(obj) {
 	this.codigo = obj.codigo;
 	this.archivo = obj.archivo;
 	this.preguntas = [{
-		"id": 14,
+		"id": 13,
 		"fecha": "5 aug 2010",
-		"pregunta": "Sea f(t) con periodo T=2. El desarrollo en Serie exponencial de Fourier tiene sus coeficientes:",
+		"pregunta": "La superposición de dos ondas senoidales de igual frecuencia y distinta amplitud, PUEDE ser:",
 		"tipo": "choicesimple",
-		"img": "img/082032-14.png",
-		"opciones": ["Todos reales","Ninguno real","Todos imaginarios puros","Ninguna de las anteriores"],
-		"respuesta": "Ninguna de las anteriores",
-		"justifica": "Por ser suma de una función impar más una constante, la SEF tiene un coeficiente real (el c0) y los demás imaginarios puros."
+		"opciones": ["De distinta frecuencia de las dadas","De amplitud igual a la suma de ambas amplitudes", "Una función no senoidal", "Ninguna de las anteriores"],
+		"respuesta": "De amplitud igual a la suma de ambas amplitudes",
+		"justifica": "Si están en fase, la amplitud es la suma de las amplitudes."
 	},{
 		"id": 15,
 		"fecha": "5 aug 2010",
@@ -30,13 +29,12 @@ function Materia(obj) {
 		"respuesta": "Ninguna de las anteriores",
 		"justifica": "Se cumple si a=10 y b=14 ó si b – 3a + 16 ≠ 0."
 	},{
-		"id": 9,
-		"img": "img/082032-09.png",
-		"fecha": "17 jul 2014",
-		"pregunta": "Los coeficientes de la Serie Exponencial de Fourier de f(t) son:",
-		"tipo": "choicesimple",
-		"opciones": ["Todos reales","Todos imaginarios","Uno real y el resto imaginarios","Ninguno de los anteriores"],
-		"respuesta": "Todos reales"
+		"id": 6,
+		"fecha": "22 dec 2015",
+		"tipo": "ChoiceSimple",
+		"pregunta": "Dada <img src='img/082032-06.png'> y las proposiciones r, s, t, u, siendo: <br> p: Es posible resolverla por Simpson con h=0,3; <br> q: Al resolverla por Trapecios con h=0,1 se obtiene un valor menor al exacto; <br> La única verdadera es:",
+		"opciones": ["r: not(p) y q", "s: not(p) y not(q)", "t: p y not(q)", "u: p y q"],
+		"respuesta": "s: not(p) y not(q)"
 	},{
 		"id": 5,
 		"fecha": "22 dec 2015",

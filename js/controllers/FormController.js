@@ -9,20 +9,31 @@ function disableElement (elem) {
 }
 
 
-app.controller('FormCtrller', ['$scope','$compile','materiaservice', function($scope, $compile, materiaservice) {
+app.controller('FormCtrller', ['$scope','$compile','$document', 'materiaservice', function($scope, $compile, $document, materiaservice) {
 	
 	$scope.materiaSeleccionada = new Materia({"nombre": "Matemática Superior",
 			"codigo": "082032", "archivo": "json/superior.json"});
 	
-	$scope.answered = null;
-	$scope.contestadas = 0;
-	$scope.correctas = 0;
+	$document.ready(function() {
+		$scope.resetTest();
+		$scope.pickQuestion();
+		$scope.dibujarForm();
+		$scope.cargarEnunciado();
+	});
 	
-	$scope.question = createPregunta($scope.materiaSeleccionada.selectPregunta());
-	
+	$scope.resetTest = function() {
+		$scope.contestadas = 0;
+		$scope.correctas = 0;
+		$scope.answered = null;
+	};
+
+	$scope.pickQuestion = function() {
+		$scope.question = createPregunta($scope.materiaSeleccionada.selectPregunta());
+	};
+
 	$scope.cargarEnunciado = function() {
-		var q = $scope.question;
-		if (q.tieneImagen()) {
+		
+		if ($scope.question.tieneImagen()) {
 			$("imagen-modal").removeClass("sr-only");
 			$("#enunciado").width("70%");
 		} else {
@@ -30,6 +41,11 @@ app.controller('FormCtrller', ['$scope','$compile','materiaservice', function($s
 			$("#enunciado").width("100%");
 		}
 	}
+
+	$scope.dibujarForm = function() {
+		var elem = $compile($scope.question.formRta)($scope);
+		$("#divRespuesta").append(elem);
+	};	
 	
 	$scope.corregir = function() {
 		enableElement("#btnSiguiente");
@@ -48,23 +64,19 @@ app.controller('FormCtrller', ['$scope','$compile','materiaservice', function($s
 		$("resultado-correcto, resultado-incorrecto").addClass("sr-only");
 		if ($q.esCorrecto($scope.answered)) $scope.correctas++;
 		$scope.contestadas++;
-		$scope.resetQuestionElements();
+		$scope.resetQuestion();
 	};
 	
-	$scope.resetQuestionElements = function () {
+	$scope.resetQuestion = function () {
 		$scope.answered = null;
 		enableElement("#btnRta");
 		disableElement("#btnSiguiente");
 		$scope.question.aceptarRespuestas();
 		$("#divRespuesta").empty();
 		/*********/
-		$scope.question = createPregunta($scope.materiaSeleccionada.selectPregunta());
+		$scope.pickQuestion();
 		$scope.cargarEnunciado();
 		$scope.dibujarForm();
 	};
-	
-	$scope.dibujarForm = function() {
-		var elem = $compile($scope.question.formRta)($scope);
-		$("#divRespuesta").append(elem);
-	};
+		
 }]);
