@@ -19,6 +19,9 @@ app.controller('FormCtrller', ['$scope','$compile','$document', 'materiaservice'
 		$scope.pickQuestion();
 		$scope.dibujarForm();
 		$scope.cargarEnunciado();
+		enableElement("#btnRta");
+		disableElement("#btnSiguiente");
+		$scope.question.aceptarRespuestas();
 	});
 	
 	$scope.resetTest = function() {
