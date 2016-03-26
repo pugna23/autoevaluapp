@@ -17,7 +17,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', 'materiaservice'
 	$document.ready(function() {
 		$scope.resetTest();
 		$scope.pickQuestion();
-		$scope.dibujarForm();
+		$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
 		$scope.cargarEnunciado();
 		enableElement("#btnRta");
 		disableElement("#btnSiguiente");
@@ -35,19 +35,15 @@ app.controller('FormCtrller', ['$scope','$compile','$document', 'materiaservice'
 	};
 
 	$scope.cargarEnunciado = function() {
-		
 		if ($scope.question.tieneImagen()) {
-			$("imagen-modal").removeClass("sr-only");
+			$scope.dibujarForm("#divPregunta","<imagen-modal></imagen-modal>");
 			$("#enunciado").width("70%");
-		} else {
-			$("imagen-modal").addClass("sr-only");
-			$("#enunciado").width("100%");
-		}
+		};
 	}
 
-	$scope.dibujarForm = function() {
-		var elem = $compile($scope.question.formRta)($scope);
-		$("#divRespuesta").append(elem);
+	$scope.dibujarForm = function(id,forma) {
+		var elem = $compile(forma)($scope);
+		$(id).append(elem);
 	};	
 	
 	$scope.corregir = function() {
@@ -76,10 +72,12 @@ app.controller('FormCtrller', ['$scope','$compile','$document', 'materiaservice'
 		disableElement("#btnSiguiente");
 		$scope.question.aceptarRespuestas();
 		$("#divRespuesta").empty();
+		$("#enunciado").width("100%");
+		$("imagen-modal").remove();
 		/*********/
 		$scope.pickQuestion();
 		$scope.cargarEnunciado();
-		$scope.dibujarForm();
+		$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
 	};
 		
 }]);

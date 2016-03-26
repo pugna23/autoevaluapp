@@ -1,3 +1,7 @@
+function noBr(texto) {
+	return texto.replace(/<br>/gi,"");
+}
+
 function Pregunta(param) {
 	var obj = $.extend({"img": "", "justifica": ""},param);	
 	this.id = obj.id;
@@ -11,10 +15,34 @@ function Pregunta(param) {
 		return !(this.img === "" || this.img === null || this.img === '');
 	}
 	
-	this.esCorrecto = function(contesta) {
-		return (contesta === this.respuesta);
+	this.esCorrecto = function(rta) {
+		this.respuesta === rta;
 	}
 }
+
+function getAllQuestions(materia) {
+	return jQuery.map(materia, function(q, index) {
+		return createPregunta(q);
+	});
+}
+
+function createPregunta(pregunta) {
+	switch (pregunta.tipo.toUpperCase()) {
+	case "CHOICESIMPLE":
+		return new ChoiceSimple(pregunta);
+		break;
+	case "VOF":
+		return new VoF(pregunta);
+		break;
+	case "INPUT":
+		return new InputSimple(pregunta);
+		break;
+	default:
+		return new InputSimple(pregunta);
+	}
+}
+
+/**************************************************************************/
 
 function MultipleChoice(obj) {
 	Pregunta.apply(this,[obj]);
@@ -35,8 +63,15 @@ function MultipleChoice(obj) {
 	
 	this.formRta = "<choice-simple></choice-simple>";
 	
+	this.esCorrecto = function(rta) {
+		if (rta == null) return false;
+		if ($.isNumeric(rta)) return (this.respuesta == rta);
+		return (this.respuesta == noBr(rta));
+	}
 }
 MultipleChoice.prototype = Pregunta;
+
+/**************************************************************************/
 
 function VoF(obj) {
 	MultipleChoice.apply(this,[obj]);
@@ -44,11 +79,15 @@ function VoF(obj) {
 }
 VoF.prototype = MultipleChoice;
 
+/**************************************************************************/
+
 function ChoiceSimple(obj) {
 	MultipleChoice.apply(this,[obj]);
 	this.opciones = obj.opciones;
 }
 ChoiceSimple.prototype = MultipleChoice;
+
+/**************************************************************************/
 
 function InputSimple(param) {
 	var obj = $.extend({"label": "Respuesta"},param);
@@ -56,8 +95,9 @@ function InputSimple(param) {
 	this.label = obj.label;
 	
 	this.esCorrecto = function(rta) {
-		if ($.isNumeric(rta)) { return (this.respuesta == rta); }
-		else return (this.respuesta.toUpperCase() === rta.toUpperCase());
+		if (rta == null) return false;
+		if ($.isNumeric(rta)) return (this.respuesta == rta);
+		return (this.respuesta.toUpperCase() === rta.toUpperCase());
 	};
 	
 	this.anularRespuestas = function() {
@@ -71,19 +111,3 @@ function InputSimple(param) {
 	this.formRta = "<input-simple></input-simple>";
 }
 InputSimple.prototype = Pregunta;
-
-function createPregunta(pregunta) {
-	switch (pregunta.tipo.toUpperCase()) {
-	case "CHOICESIMPLE":
-		return new ChoiceSimple(pregunta);
-		break;
-	case "VOF":
-		return new VoF(pregunta);
-		break;
-	case "INPUT":
-		return new InputSimple(pregunta);
-		break;
-	default:
-		return new InputSimple(pregunta);
-	}
-}

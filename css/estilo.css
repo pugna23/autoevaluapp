@@ -78,6 +78,10 @@
 	margin-right: 10px;
 }
 
+.overline {
+	text-decoration: overline;
+}
+
 .col-centered {
 	text-align: center;
     float: none;
@@ -111,9 +115,8 @@ a img {
 }
 
 #enunciado {
-	font-family: "Verdana";
-	font-size: 1.25em;
-	width: 70%;
+	font-family: "Cambria Math", "Calibri", "Lucida Sans";
+	font-size: 1.5em;
 	height: 199px;
 	text-align: center;
 	margin-left: 8px;
@@ -124,5 +127,11 @@ a img {
 	-webkit-appearance: none;
 	border-radius: 10px;
 	text-align: center;
-    height: 54px;  
+    height: 54px; 
+	font-family: "Cambria Math";
+	font-size: 16px;
+}
+
+#incorrecto p {
+	display: inline;
 }
