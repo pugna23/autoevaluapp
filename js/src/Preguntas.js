@@ -18,6 +18,8 @@ function Pregunta(param) {
 	this.esCorrecto = function(rta) {
 		this.respuesta === rta;
 	}
+	
+	this.stringRespuesta = this.respuesta;
 }
 
 function getAllQuestions(materia) {
@@ -36,6 +38,9 @@ function createPregunta(pregunta) {
 		break;
 	case "INPUT":
 		return new InputSimple(pregunta);
+		break;
+	case "NUMERICINPUT":
+		return new NumericInput(pregunta);
 		break;
 	default:
 		return new InputSimple(pregunta);
@@ -97,7 +102,7 @@ function InputSimple(param) {
 	this.esCorrecto = function(rta) {
 		if (rta == null) return false;
 		if ($.isNumeric(rta)) return (this.respuesta == rta);
-		return (this.respuesta.toUpperCase() === rta.toUpperCase());
+		return (this.respuesta.toUpperCase() === $.trim(rta).toUpperCase());
 	};
 	
 	this.anularRespuestas = function() {
@@ -111,3 +116,18 @@ function InputSimple(param) {
 	this.formRta = "<input-simple></input-simple>";
 }
 InputSimple.prototype = Pregunta;
+
+/**************************************************************************/
+function NumericInput(obj) {
+	InputSimple.apply(this,[obj]);
+	
+	this.esCorrecto = function(rta) {
+		if (rta == null) return false;
+		var valor = parseFloat(rta);
+		var $precision = this.respuesta.precision;
+		return (this.respuesta.value.toFixed($precision + 3) == valor.toFixed($precision + 3));
+	}
+	
+	this.stringRespuesta = this.respuesta.value;
+}
+NumericInput.prototype = InputSimple;

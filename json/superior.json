@@ -1,17 +1,17 @@
 {
 	"questions": [{
 		"id": 1,
-		"fecha": "01 dec 2015",
+		"fecha": "1 dec 2015",
 		"pregunta": "Calcular el valor de la integral <img src='img/082032-01.png'> por Transformada De Laplace.",
-		"tipo": "Input",
-		"respuesta": 0.24
+		"tipo": "numericinput",
+		"respuesta": { "value": 0.24, "precision": 2}
 	},{
 		"id" : 2,
 		"fecha": "1 dec 2015",
-		"tipo": "input",
+		"tipo": "numericinput",
 		"pregunta": "La transferencia <img src='img/082032-02.png'> corresponde a un sistema estable solamente con un valor de la constante real K. ¿Cuál es el valor de K?",
 		"label": "K = ",
-		"respuesta": 2
+		"respuesta": { "value": 2, "precision": 0}
 	},{
 		"id": 3,
 		"fecha": "1 dec 2015",
@@ -21,10 +21,10 @@
 	},{
 		"id" : 4,
 		"fecha": "22 dec 2015",
-		"tipo": "Input",
+		"tipo": "numericinput",
 		"pregunta": "Dada <img src='img/082032-04.png'>, para que el valor medio de dicha función sea 4, el valor de k &isin; R debe ser:",
 		"label": "k = ",
-		"respuesta": 4.5
+		"respuesta": {"value": 4.5, "precision": 1}
 	},{
 		"id": 5,
 		"fecha": "22 dec 2015",
@@ -42,10 +42,10 @@
 	},{
 		"id": 7,
 		"fecha": "14 Feb 2013",
-		"tipo": "Input",
+		"tipo": "numericinput",
 		"pregunta": "Al resolver la integral <img src='img/082032-07.png'> por Trapecios con h=0.1, puede asegurarse un error menor que:",
 		"label": "| E | ≤ ",
-		"respuesta": 0.00148753
+		"respuesta": {"value": 0.00148753, "precision": 8} 
 	},{
 		"id": 8,
 		"fecha": "17 Jul 2014",
@@ -64,8 +64,8 @@
 		"id": 10,
 		"fecha": "17 jul 2014",
 		"pregunta": "El valor de la integral <img src='img/082032-10.png'> calculada con Transformada de Laplace es:",
-		"tipo": "input",
-		"respuesta": -0.4
+		"tipo": "numericinput",
+		"respuesta": {"value": -0.4, "precision": 1}
 	},{
 		"id": 11,
 		"fecha": "17 jul 2014",
@@ -180,7 +180,7 @@
 	},{
 		"id": 26,
 		"fecha": "2 oct 2014",
-		"pregunta": "De las siguientes funciones, una sola forma parte del desarrollo en Serie Trigonométrica de Fourier de:  f(t) = t en (-&pi;, &pi;)  y    f(t) = f( t + 2&pi; )  Indique cuál es",
+		"pregunta": "De las siguientes funciones, una sola forma parte del desarrollo en Serie Trigonométrica de Fourier de:<br>  f(t) = t en (-&pi;, &pi;)  y    f(t) = f( t + 2&pi; )  Indique cuál es",
 		"tipo": "choicesimple",
 		"opciones": ["x(t) = cos(t)", "x(t) = 1", "x(t) = sen(2t)","x(t) = cos(&pi;t)","x(t) = sen(&pi;t)"],
 		"respuesta": "x(t) = sen(2t)"
@@ -267,6 +267,56 @@
 		"opciones": ["Menor al exacto","Mayor al exacto","Igual al exacto","Ninguna de las anteriores"],
 		"respuesta":"Mayor al exacto",
 		"justifica": "Por ser cóncava hacia arriba en la hipérbola."
+	},{
+		"id": 38,
+		"fecha": "24 may 2012",
+		"pregunta": "La siguiente fórmula:       <img src='img/082032-38.png'> correspondiente a un método de resolución de ecuaciones diferenciales es explícita y de 3 pasos.",
+		"tipo": "vof",
+		"respuesta":"Falso",
+		"justifica": "Corresponde a un método IMPLICITO (figura el w<sub>i+1</sub> que se quiere calcular) y de 2 pasos (es la cantidad de w anteriores, en este caso w<sub>i</sub> y w<sub>i-1</sub>)."
+	},{
+		"id": 39,
+		"fecha": "15 dec 2011",
+		"pregunta": "Existen infinitos complejos z que verifican:    Re[ln(z)] + z<sup>2</sup> = |z|<sup>2</sup>",
+		"tipo": "vof",
+		"respuesta":"Falso",
+		"justifica": "Los únicos complejos son (1;0) y (-1;0)."
+	},{
+		"id": 40,
+		"fecha": "15 dec 2011",
+		"pregunta": "El desarrollo en Serie exponencial de Fourier de f(x) = cos(x)  si x &isin; (0,&pi;)   &and;  f(x) = f(x+&pi;)     tiene todos los coeficientes imaginarios puros.",
+		"tipo": "vof",
+		"respuesta":"Verdadero",
+		"justifica": "La función dada es IMPAR, por lo tanto los coeficientes c<sub>n</sub> son imaginarios puros."
+	},{
+		"id": 41,
+		"fecha": "15 dec 2011",
+		"pregunta": "NO es posible hallar algún valor de &phi; &isin; R para que el fasor correspondiente a la suma de las funciones:<br> f(t) = A cos(w t - &pi;/6)  y  g(t) = A cos(wt + &phi;) sea imaginario puro.",
+		"tipo": "vof",
+		"respuesta":"Falso",
+		"justifica": "Es posible, tomando &phi; = 7/6 &pi;."
+	},{
+		"id": 42,
+		"fecha": "15 dec 2011",
+		"pregunta": "Para cualquier función f, sea p &isin; R : si  | f(p) | < 0.001, entonces la distancia de p a una raíz es menor a 0.001.",
+		"tipo": "vof",
+		"respuesta":"Falso",
+		"justifica": "Puede ni haber raíz, por ejemplo f(x) = x2 + 0.0008 , f(0) < 0.001 pero no hay raíz. O bien aunque exista raíz, su la pendiente es suave, la distancia puede ser mucho mayor. Por ejemplo, si f(x) = ln(x/2) cuya raíz es p = 2, resulta que f(2.002) = 0,0009995 < 0.001 pero la distancia a la raíz es de 0.002."
+	},{
+		"id": 43,
+		"fecha": "15 dec 2011",
+		"pregunta": "El problema de valor inicial:  <i>y’(t) = - t y</i> con y(0) = 1<br>Cumple la condición de Lipschitz en R = { (t,y) &isin; R<sup>2</sup> /  0 &le; t &le; 3 &and; 0 &le; y &le; 2 } con la menor constante:",
+		"tipo": "choicesimple",
+		"opciones": ["L = 1","L = 2","L = 3","Otro valor de L","No cumple la <br>condición de Lipschitz"],
+		"respuesta":"L = 3",
+		"justifica": "| f(t,y<sub>1</sub>) – f(t,y<sub>2</sub>) | = | -t y<sub>1</sub> + t y<sub>2</sub> | = | -t (y<sub>1</sub> – y<sub>2</sub>) | &le;  3 |y<sub>1</sub> – y<sub>2</sub>| &rArr; cumple con L = 3."
+	},{
+		"id": 44,
+		"fecha": "15 dec 2011",
+		"pregunta": "Los métodos de Gauss-Seidel y Jacobi para resolver sistemas de ecuaciones lineales convergen solo para matrices de coeficientes A que sean:",
+		"tipo": "choicesimple",
+		"opciones": ["Simétricas","Con norma = 1","Con radio espectral > 1","Diagonal dominante","Depende del vector<br> inicial tomado","Cualquier matriz cuadrada<br> e inversible"],
+		"respuesta":"Diagonal dominante"
 	}
 	]
 }
