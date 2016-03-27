@@ -5,6 +5,13 @@ app.directive('formIntro',function() {
 	}
 });
 
+app.directive('formCentral',function() {
+	return {
+		restrict: 'E',
+		templateUrl: 'js/directives/formCentral.html'
+	}
+});
+
 app.directive('formStats',function() {
 	return {
 		restrict: 'E',

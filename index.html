@@ -33,27 +33,8 @@
 			<menu-materias class="sr-only"></menu-materias>
 	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well" ng-controller='FormCtrller as ctrl'>
 			  <form-intro ng-show="!readyTest"></form-intro>
-			  <form class="form-horizontal" role="form" ng-show="(preguntasContestadas.length <= cantPreguntas) && (readyTest)">
-			  	<div id="datosPregunta" class="form-group">
-			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
-			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.codigo}}-{{question.id | digits}}</span></p>
-			  	</div>
-			  		<pregunta></pregunta>
-			  	<div id="divRespuesta" class="form-group">
-			  	</div>
-			  	<div id="divResultado">
-			  		<resultado-incorrecto class="sr-only"></resultado-incorrecto>
-			  		<resultado-correcto class="sr-only"></resultado-correcto>
-			  	</div>
-			  	<div id="divBotones" class="form-group">
-			  		<div class="btn-group-lg col-centered">
-			  		  <span id="labelId" class="label label-success pull-left">Pregunta {{preguntasContestadas.length}}</span>
-					  <button id="btnRta" type="button" class="btn btn-primary" ng-click="corregir()">Enviar</button>
-					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled" ng-click="continuar()" disabled>Siguiente</button>
-					</div>
-			  	</div>
-			  </form>
-			  <form-stats></form-stats>
+			  <form-central ng-show="(preguntasContestadas.length <= cantPreguntas) && (readyTest)"></form-central>
+			  <form-stats ng-show="(preguntasContestadas.length > cantPreguntas) && (readyTest)"></form-stats>
 			</div>
 		</div>
 	</div>
