@@ -18,10 +18,12 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$scope.resetTest();
 	});
 	
+	$scope.cantPreguntas = -1;
+	
 	$scope.resetTest = function() {
-		$scope.contestadas = 0;
 		$scope.preguntasContestadas = [];
 		$scope.correctas = 0;
+		$scope.incorrectas = 0;
 		$scope.answered = null;
 		$http.get($scope.materiaSeleccionada.archivo).then(function(response) {
 			var list = response.data.questions;
@@ -74,8 +76,9 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 	$scope.continuar = function() {
 		var $q = $scope.question;
 		$("resultado-correcto, resultado-incorrecto").addClass("sr-only");
-		if ($q.esCorrecto($scope.answered)) $scope.correctas++;
-		$scope.contestadas++;
+		if ($q.esCorrecto($scope.answered)) {
+			$scope.correctas++;
+		} else $scope.incorrectas++;
 		$scope.resetQuestion();
 	};
 	

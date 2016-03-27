@@ -31,8 +31,22 @@
 	<div class="container-fluid">
 		<div class="row">
 			<menu-materias class="sr-only"></menu-materias>
-	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well">
-			  <form class="form-horizontal" role="form" ng-controller='FormCtrller as ctrl'>
+	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well" ng-controller='FormCtrller as ctrl'>
+			  <div ng-show="cantPreguntas == -1">
+				  	<h2 class="page-header">Test de: {{materiaSeleccionada.nombre}}</h2>
+					<h4>Seleccione la cantidad de preguntas a contestar:</h4>
+					<div class="form-group">
+					  <label for="sel1">Select list:</label>
+					  <select class="form-control" id="sel1" width="150px">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					  </select>
+					</div>
+					<p><a class="btn btn-primary btn-lg col-centered" role="button">Comenzar</a></p>
+			  </div>
+			  <form class="form-horizontal" role="form" ng-show="(preguntasContestadas.length <= cantPreguntas) && (cantPreguntas > -1)">
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
 			  		<p class="text-muted pull-right"><span id="labelId" class="label label-info"># {{materiaSeleccionada.codigo}}-{{question.id | digits}}</span></p>
@@ -46,12 +60,16 @@
 			  	</div>
 			  	<div id="divBotones" class="form-group">
 			  		<div class="btn-group-lg col-centered">
-			  		  <span id="labelId" class="label label-success pull-left">{{correctas}} / {{contestadas}}</span>
+			  		  <span id="labelId" class="label label-success pull-left">{{correctas}} / {{preguntasContestadas.length}}</span>
 					  <button id="btnRta" type="button" class="btn btn-primary" ng-click="corregir()">Enviar</button>
 					  <button id="btnSiguiente" type="button" class="btn btn-default pull-right disabled" ng-click="continuar()" disabled>Siguiente</button>
 					</div>
 			  	</div>
 			  </form>
+			  <div ng-show="(preguntasContestadas.length > cantPreguntas) && (cantPreguntas > -1)">
+			  		<p> Correctas: {{correctas}} </p>
+			  		<p> Incorrectas: {{incorrectas}} </p>
+			  </div>
 			</div>
 		</div>
 	</div>
