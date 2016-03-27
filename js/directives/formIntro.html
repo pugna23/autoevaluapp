@@ -1,0 +1,14 @@
+<div class="form-horizontal">
+ 	<div class="col-centered">
+  	<h3 class="page-header configTest configTestHeader">Test de: {{materiaSeleccionada.nombre}}</h3>
+ 	</div>
+ 	<div class="form-group col-centered">
+  <label class="configTest configTestLabel" for="sel">Cantidad de preguntas a contestar:  </label>
+  <select class="configTest configTestLabel" ng-model="cantPreguntas" id="sel">
+    <option ng-repeat="opt in questionOptions">{{opt}}</option>
+  </select>
+ </div>
+  <div class="col-centered">
+  	<button type="button" class="configTest configTestLabel btn btn-primary btn-lg" role="button" ng-click="startTest()">Comenzar</button>
+  </div>					
+</div>

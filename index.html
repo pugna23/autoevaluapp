@@ -32,20 +32,7 @@
 		<div class="row">
 			<menu-materias class="sr-only"></menu-materias>
 	        <div id="formulario" class="col-sm-9 col-sm-offset-3 col-md-7 well" ng-controller='FormCtrller as ctrl'>
-			  <div class="form-horizontal" ng-show="!readyTest">
-				  	<div class="col-centered">
-					  	<h3 class="page-header configTest configTestHeader">Test de: {{materiaSeleccionada.nombre}}</h3>
-				  	</div>
-				  	<div class="form-group col-centered">
-					  <label class="configTest configTestLabel" for="sel">Cantidad de preguntas a contestar:  </label>
-					  <select class="configTest configTestLabel" ng-model="cantPreguntas" id="sel">
-					    <option ng-repeat="opt in questionOptions">{{opt}}</option>
-					  </select>
-					 </div>
-					  <div class="col-centered">
-					  	<button type="button" class="configTest configTestLabel btn btn-primary btn-lg" role="button" ng-click="startTest()">Comenzar</button>
-					  </div>					
-			  </div>
+			  <form-intro ng-show="!readyTest"></form-intro>
 			  <form class="form-horizontal" role="form" ng-show="(preguntasContestadas.length <= cantPreguntas) && (readyTest)">
 			  	<div id="datosPregunta" class="form-group">
 			  		<p class="text-muted pull-left"><span class="label label-fecha">{{question.fecha | date:'dd/MM/yy'}}</span></p>
@@ -104,6 +91,7 @@
 	<script src="js/directives/choiceSimple.js"></script>
 	<script src="js/directives/inputSimple.js"></script>
 	<script src="js/directives/spanResultado.js"></script>
+	<script src="js/directives/formGeneral.js"></script>
 	
 </body>
 </html>
