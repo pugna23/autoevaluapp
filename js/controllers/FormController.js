@@ -18,9 +18,10 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$scope.resetTest();
 	});
 	
-	$scope.cantPreguntas = -1;
+	$scope.cantPreguntas = 5;
 	
 	$scope.resetTest = function() {
+		$scope.readyTest = false;
 		$scope.preguntasContestadas = [];
 		$scope.correctas = 0;
 		$scope.incorrectas = 0;
@@ -28,14 +29,28 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$http.get($scope.materiaSeleccionada.archivo).then(function(response) {
 			var list = response.data.questions;
 			$scope.materiaSeleccionada.preguntas = getAllQuestions(list);
+			$scope.generateOptions();
 			$scope.pickQuestion();
-			
 			$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
 			$scope.cargarEnunciado();
 			enableElement("#btnRta");
 			disableElement("#btnSiguiente");
 			$scope.question.aceptarRespuestas();
 		});
+	};
+	
+	$scope.startTest = function() {
+		$scope.readyTest = true;
+	}
+	
+	$scope.generateOptions = function() {
+		var maxOptions = $scope.materiaSeleccionada.preguntas.length;
+		maxOptions = Math.floor(maxOptions / 5);
+		var optList = [];
+		for (var i = 1; i <= maxOptions; i++) {
+			optList.push(i * 5);
+		};
+		$scope.questionOptions = optList;
 	};
 	
 	$scope.pickQuestion = function() {
