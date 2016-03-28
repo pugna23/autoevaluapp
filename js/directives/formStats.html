@@ -1,4 +1,20 @@
 <div>
- 		<p> Correctas: {{correctas}} </p>
- 		<p> Incorrectas: {{incorrectas}} </p>
+	<h2 class="page-header">Resultados</h2>
+	
+	<div class="progress">
+		<div class="progress-bar progress-bar-success progress-bar-striped" 
+	  			role="progressbar" aria-valuenow="{{correctas}}" aria-valuemin="0" 
+	  			aria-valuemax="{{cantPreguntas}}"
+	  			ng-style="{width : ( (correctas * 100 / cantPreguntas).toFixed(2) + '%' ) }">
+		</div>
+		<div class="progress-bar progress-bar-danger progress-bar-striped" 
+	  			role="progressbar" aria-valuenow="{{incorrectas}}" aria-valuemin="0" 
+	  			aria-valuemax="{{cantPreguntas}}"
+	  			ng-style="{width : ( (incorrectas * 100 / cantPreguntas).toFixed(2) + '%' ) }">
+		</div>
+	</div>
+<!-- 	<canvas id="graphResultado" width="200" height="200"></canvas> -->
+	<p class="text-muted pull-left"> Correctas: {{correctas}} /  Incorrectas: {{incorrectas}} </p>
+	<p class="text-muted pull-right"> Porcentaje correcto: {{(correctas * 100 / cantPreguntas).toFixed(2)}}% </p>
+ 		
  </div>

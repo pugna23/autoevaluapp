@@ -16,7 +16,7 @@
 	color:#eee;
 }
 
-/********Footer*************/
+/********Intro*************/
 .configTest {
 	font-family: "Calibri";
 }
@@ -72,79 +72,4 @@
 
 .list-group {
 	margin-bottom: 2px;
-}
-
-/******Formulario**********/
-#formulario {
-	height: 515px;
-	width: 970px;
-	position: absolute;
-	margin-left: 360px;
-}
-
-.label-fecha {
-	background-color: #888;
-	margin-left: 10px;
-}
-
-#labelId {
-	margin-right: 10px;
-}
-
-.overline {
-	text-decoration: overline;
-}
-
-.col-centered {
-	text-align: center;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    float: none;
-}
-
-#divPregunta {
-	height: 200px;
-	text-align: center;
-}
-
-a img {
-	min-height: 75px;
-	min-width: 190px;
-	max-width: 205px;
-	max-height: 190px;
-	margin-right: 15px;
-	margin-top: 5px;
-	border: 1px solid #ccc;
-}
-
-.img-zoom {
-	max-width: 1040px;
-	max-height: 400px;
-	min-width: 195px;
-	min-height: 75px;
-	border: 1px solid #ccc;
-}
-
-#enunciado {
-	font-family: "Cambria Math", "Calibri", "Lucida Sans";
-	font-size: 1.5em;
-	height: 199px;
-	text-align: center;
-	margin-left: 8px;
-	white-space: pre-wrap;
-}
-
-.choice {
-	-webkit-appearance: none;
-	border-radius: 10px;
-	text-align: center;
-    height: 54px; 
-	font-family: "Cambria Math";
-	font-size: 16px;
-}
-
-#incorrecto p {
-	display: inline;
 }

@@ -110,5 +110,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$scope.cargarEnunciado();
 		$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
 	};
-		
+	
+	/***********************************/
+	
 }]);
