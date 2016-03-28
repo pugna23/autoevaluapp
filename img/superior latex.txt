@@ -1,0 +1,15 @@
+01	\int_0^\infty (1-t) e^{-t} sen(2t) dt
+02	G(s) = \frac{(17s - 34)(s^{2} - Ks -15)}{(s+1)(s-5)(s^{2} + 10s + 26)}
+03	\int_1^2 (x-1) e^x dx
+04	f(t) = \begin{cases} 3 & \text{ si } -1 < t < 1 \\ k & \text{ si } 1 < t < 5 \end{cases} \wedge f(t) = f(t+6)
+06	\int_{-2}^2 x^3 e^{x^2}dx
+07	I = \int_{0.6}^{2.6} e^{-x^{2}} dx
+10	\int_{0}^{\infty} t(1 - e^{-\frac{1}{2}t}+e^{-2t}) cos(t)dt
+15	G(s) = \frac{s^2-ks + 12}{(s^2 + 8s + 25)(s-2)}
+17	g_{1}(x) = \frac{x + 40}{x + 1}   ;    g_{2}(x) = \frac{x^{2} + 40}{2x}
+18	\int_a^b 40e^{-40x^2}dx
+21	------------------------
+22	w_{i+1} = w_{i-3} + \frac{4}{3}h[2f(t_i;w_i)- f(t_{i-1};w_{i-1}) + 2f(t_{i-2};w_{i-2})]
+33	G(s) = \frac{3s^{2}-15s}{s^{3} - 5s^{2} + 9s + 15}
+38	w_{i+1} = w_i + \frac{h}{12}[ 5f (t_{i+1};w_{i+1}) + 8f (t_i;w_i) - f(t_{i-1};w_{i-1})]
+43	

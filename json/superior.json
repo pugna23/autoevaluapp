@@ -2,48 +2,48 @@
 	"questions": [{
 		"id": 1,
 		"fecha": "1 dec 2015",
-		"pregunta": "Calcular el valor de la integral <img src='img/082032-01.png'> por Transformada De Laplace.",
+		"pregunta": "Calcular el valor de la integral <img src='img/082032-01.gif'> por Transformada De Laplace.",
 		"tipo": "numericinput",
 		"respuesta": { "value": 0.24, "precision": 2}
 	},{
 		"id" : 2,
 		"fecha": "1 dec 2015",
 		"tipo": "numericinput",
-		"pregunta": "La transferencia <img src='img/082032-02.png'> corresponde a un sistema estable solamente con un valor de la constante real K. ¿Cuál es el valor de K?",
+		"pregunta": "La transferencia <img src='img/082032-02.gif'> corresponde a un sistema estable solamente con un valor de la constante real K. ¿Cuál es el valor de K?",
 		"label": "K = ",
 		"respuesta": { "value": 2, "precision": 0}
 	},{
 		"id": 3,
 		"fecha": "1 dec 2015",
 		"tipo": "input",
-		"pregunta": "Al resolver la integral <img src='img/082032-03.png'> por el método de trapecios se obtiene un valor .......... al exacto.",
+		"pregunta": "Al resolver la integral <img src='img/082032-03.gif'> por el método de trapecios se obtiene un valor .......... al exacto.",
 		"respuesta": "mayor"
 	},{
 		"id" : 4,
 		"fecha": "22 dec 2015",
 		"tipo": "numericinput",
-		"pregunta": "Dada <img src='img/082032-04.png'>, para que el valor medio de dicha función sea 4, el valor de k &isin; R debe ser:",
+		"pregunta": "Dada <img src='img/082032-04.gif'>, para que el valor medio de dicha función sea 4, el valor de k &isin; R debe ser:",
 		"label": "k = ",
 		"respuesta": {"value": 4.5, "precision": 1}
 	},{
 		"id": 5,
 		"fecha": "22 dec 2015",
 		"tipo": "ChoiceSimple",
-		"pregunta": "La serie trigonométrica de Fourier de <img src='img/082032-04.png'><br>(con cualquier k &isin; R) es solo de:",
+		"pregunta": "La serie trigonométrica de Fourier de <img src='img/082032-04.gif'><br>(con cualquier k &isin; R) es solo de:",
 		"opciones": ["Senos", "Cosenos", "Frecuencias impares"],
 		"respuesta": "Cosenos"
 	},{
 		"id": 6,
 		"fecha": "22 dec 2015",
 		"tipo": "ChoiceSimple",
-		"pregunta": "Dada <img src='img/082032-06.png'> y las proposiciones r, s, t, u, siendo: <br> p: Es posible resolverla por Simpson con h=0.3; <br> q: Al resolverla por Trapecios con h=0.1 se obtiene un valor menor al exacto. <br> La única verdadera es:",
+		"pregunta": "Dada <img src='img/082032-06.gif'> y las proposiciones r, s, t, u, siendo: <br> p: Es posible resolverla por Simpson con h=0.3; <br> q: Al resolverla por Trapecios con h=0.1 se obtiene un valor menor al exacto. <br> La única verdadera es:",
 		"opciones": ["r: &not;p &and; q", "s: &not;p &and; &not;q", "t: p &and; &not;q", "u: p &and; q"],
 		"respuesta": "s: &not;p &and; &not;q"
 	},{
 		"id": 7,
 		"fecha": "14 Feb 2013",
 		"tipo": "numericinput",
-		"pregunta": "Al resolver la integral <img src='img/082032-07.png'> por Trapecios con h=0.1, puede asegurarse un error menor que:",
+		"pregunta": "Al resolver la integral <img src='img/082032-07.gif'> por Trapecios con h=0.1, puede asegurarse un error menor que:",
 		"label": "| E | ≤ ",
 		"respuesta": {"value": 0.00148753, "precision": 8} 
 	},{
@@ -63,7 +63,7 @@
 	},{
 		"id": 10,
 		"fecha": "17 jul 2014",
-		"pregunta": "El valor de la integral <img src='img/082032-10.png'> calculada con Transformada de Laplace es:",
+		"pregunta": "El valor de la integral <img src='img/082032-10.gif'> calculada con Transformada de Laplace es:",
 		"tipo": "numericinput",
 		"respuesta": {"value": -0.4, "precision": 1}
 	},{
@@ -100,7 +100,7 @@
 	},{
 		"id": 15,
 		"fecha": "5 aug 2010",
-		"pregunta": "Para que la transferencia <img src='img/082032-15.png'> corresponda a un sistema estable, entonces:",
+		"pregunta": "Para que la transferencia <img src='img/082032-15.gif'> corresponda a un sistema estable, entonces:",
 		"tipo": "choicesimple",
 		"opciones": ["k = 0", "k = 8", "k puede tomar cualquier<br> valor real", "No existe valor de k &isin; R"],
 		"respuesta": "k = 8",
@@ -115,14 +115,14 @@
 	},{
 		"id": 17,
 		"fecha": "26 jul 2012",
-		"pregunta": "Dadas las funciones <img src='img/082032-17.png'>, para hallar la raíz cuadrada de 40 por el método de punto fijo, converge:",
+		"pregunta": "Dadas las funciones <img src='img/082032-17.gif'>, para hallar la raíz cuadrada de 40 por el método de punto fijo, converge:",
 		"tipo": "choicesimple",
 		"opciones": ["Solo con g1","Solo con g2","Con ambas","Con ninguna"],
 		"respuesta": "Con ambas"
 	},{
 		"id": 18,
 		"fecha": "26 jul 2012",
-		"pregunta": "Si al resolver la integral <img src='img/082032-18.png'> por Trapecios tomando 20 subintervalos se obtiene un error del orden de 0.1, entonces si se toman 40 subintervalos, el error aproximadamente va a ser:",
+		"pregunta": "Si al resolver la integral <img src='img/082032-18.gif'> por Trapecios tomando 20 subintervalos se obtiene un error del orden de 0.1, entonces si se toman 40 subintervalos, el error aproximadamente va a ser:",
 		"tipo": "choicesimple",
 		"opciones": [0.01,0.05,0.025,0.0001],
 		"respuesta": 0.025
@@ -151,7 +151,7 @@
 	},{
 		"id": 22,
 		"fecha": "8 aug 2013",
-		"pregunta": "La fórmula: <img src='img/082032-22.png'> es:",
+		"pregunta": "La fórmula: <img src='img/082032-22.gif'> es:",
 		"tipo": "choicesimple",
 		"opciones": ["De paso simple","De 3 pasos","Implícita","Etapa predictora"],
 		"respuesta":"Etapa predictora",
@@ -230,7 +230,7 @@
 	},{
 		"id": 33,
 		"fecha": "18 dec 2012",
-		"pregunta": "Sea <img src='img/082032-33.png'> entonces la respuesta del sistema a un escalón E(t) es:",
+		"pregunta": "Sea <img src='img/082032-33.gif'> entonces la respuesta del sistema a un escalón E(t) es:",
 		"tipo": "choicesimple",
 		"opciones": ["Oscilatoria amortiguada","Oscilatoria pura","Exponencial decreciente","Ninguna de las anteriores"],
 		"respuesta": "Oscilatoria pura",
@@ -270,7 +270,7 @@
 	},{
 		"id": 38,
 		"fecha": "24 may 2012",
-		"pregunta": "La siguiente fórmula:       <img src='img/082032-38.png'> correspondiente a un método de resolución de ecuaciones diferenciales es explícita y de 3 pasos.",
+		"pregunta": "La siguiente fórmula:       <img src='img/082032-38.gif'> correspondiente a un método de resolución de ecuaciones diferenciales es explícita y de 3 pasos.",
 		"tipo": "vof",
 		"respuesta":"Falso",
 		"justifica": "Corresponde a un método IMPLICITO (figura el w<sub>i+1</sub> que se quiere calcular) y de 2 pasos (es la cantidad de w anteriores, en este caso w<sub>i</sub> y w<sub>i-1</sub>)."
