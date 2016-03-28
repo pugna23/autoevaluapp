@@ -28,6 +28,9 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$http.get($scope.materiaSeleccionada.archivo).then(function(response) {
 			var list = response.data.questions;
 			$scope.materiaSeleccionada.preguntas = getAllQuestions(list);
+			$scope.lastUpdate = jQuery.map($scope.materiaSeleccionada.preguntas, function(p, index) {
+				return new Date(p.fecha)
+			}).sort(function(a,b) {return b-a})[0];
 			$scope.generateOptions();
 			$scope.pickQuestion();
 			$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
@@ -40,7 +43,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 	
 	$scope.startTest = function() {
 		$scope.readyTest = true;
-	}
+	};
 	
 	$scope.generateOptions = function() {
 		var maxOptions = $scope.materiaSeleccionada.preguntas.length;
