@@ -14,7 +14,15 @@
 		</div>
 	</div>
 <!-- 	<canvas id="graphResultado" width="200" height="200"></canvas> -->
-	<p class="text-muted pull-left"> Correctas: {{correctas}} /  Incorrectas: {{incorrectas}} </p>
-	<p class="text-muted pull-right"> Porcentaje correcto: {{(correctas * 100 / cantPreguntas).toFixed(2)}}% </p>
- 		
+	<p>
+		<p class="text-muted pull-left"> Correctas: {{correctas}} /  Incorrectas: {{incorrectas}} </p>
+		<p class="text-muted pull-right"> Porcentaje correcto: {{(correctas * 100 / cantPreguntas).toFixed(2)}}% </p>
+	</p>
+	<div class="col-centered">
+	  	<button type="button" class="configTest configTestLabel btn btn-primary btn-lg"
+	  			role="button" ng-click="resetTest()">
+	  			<span class="glyphicon glyphicon-chevron-right"></span>
+	  			Hacer otro test
+	  	</button>
+  	</div>	
  </div>

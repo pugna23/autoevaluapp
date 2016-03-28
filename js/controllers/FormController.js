@@ -18,9 +18,8 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$scope.resetTest();
 	});
 	
-	$scope.cantPreguntas = 5;
-	
 	$scope.resetTest = function() {
+		$scope.cantPreguntas = 5;
 		$scope.readyTest = false;
 		$scope.preguntasContestadas = [];
 		$scope.correctas = 0;
@@ -97,6 +96,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$scope.resetQuestion();
 	};
 	
+	
 	$scope.resetQuestion = function () {
 		$scope.answered = null;
 		enableElement("#btnRta");
@@ -107,8 +107,10 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		$("imagen-modal").remove();
 		/*********/
 		$scope.pickQuestion();
-		$scope.cargarEnunciado();
-		$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
+		if ($scope.preguntasContestadas.length <= $scope.cantPreguntas) {
+			$scope.cargarEnunciado();
+			$scope.dibujarForm("#divRespuesta",$scope.question.formRta);
+		};
 	};
 	
 	/***********************************/
