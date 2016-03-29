@@ -12,6 +12,7 @@ app.directive("menuMaterias",function() {
 			$scope.seleccionar = function(materia) {
 				$("#formulario").scope().changeMateria(materia);
 			}
+			
 		},
 		controllerAs: 'MatController'
 	}

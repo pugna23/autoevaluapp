@@ -27,6 +27,10 @@
 	text-decoration: overline;
 }
 
+.nota {
+	font-size: 0.8em;
+}
+
 #enunciado {
 	font-family: "Cambria Math", "Calibri", "Lucida Sans";
 	font-size: 1.5em;

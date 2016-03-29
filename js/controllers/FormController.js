@@ -56,7 +56,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', functio
 	};
 	
 	$scope.generateOptions = function() {
-		var maxOptions = $scope.materiaSeleccionada.preguntas.length;
+		var maxOptions = $scope.materiaSeleccionada.preguntas.length-1;
 		maxOptions = Math.floor(maxOptions / 5);
 		var optList = [];
 		for (var i = 1; i <= maxOptions; i++) {

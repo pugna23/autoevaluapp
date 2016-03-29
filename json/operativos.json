@@ -23,7 +23,7 @@
 	},
 	{"id": 4,
 	"fecha": "25 feb 2014",
-	"pregunta": "Si los procesos no proveen información sobre las duraciones de sus ráfagas, entonces no se pueden aplicar algoritmos de planificación como el SJF",
+	"pregunta": "Si los procesos no proveen información sobre las duraciones de sus ráfagas, entonces no se pueden aplicar algoritmos de planificación como el SJF.",
 	"tipo": "vof",
 	"respuesta": "Falso",
 	"justifica": "Partiendo de un valor inicial estimado default para todos los procesos (o hilos) es posible utilizar este algoritmo. Con las sucesivas ráfagas y estimaciones ese valor estimado se irá corrigiendo para cada proceso."
@@ -69,6 +69,61 @@
 	"tipo": "vof",
 	"respuesta": "Falso",
 	"justifica": "La primera afirmación es correcta ya que teniendo la FAT en RAM, sólo se acceden a bloques de datos, mientras que en EXT se podría requerir acceder a algún bloque de PTR. Sin embargo, la segunda afirmación es incorrecta ya que FAT utiliza una asignación de bloques encadenada/enlazada (no hay un índice por cada archivo)"
+	},
+	{"id": 11,
+	"fecha": "28 jul 2015",
+	"pregunta": "Una partición de swapp no necesita mecanismos que garanticen la integridad de los datos.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "No necesita integridad porque la información volcada sólo se utiliza sólo cuando el SO está activo."
+	},
+	{"id": 12,
+	"fecha": "28 jul 2015",
+	"pregunta": "Cuando la cantidad de procesos en ejecución es alta, la cantidad de memoria disponible puede afectar el rendimiento del Sistema Operativo.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "Se puede caer en thrashing, y esto se soluciona con más memoria."
+	},
+	{"id": 13,
+	"fecha": "15 feb 2016",
+	"pregunta": "En un sistema que utiliza un planificador de corto plazo sin desalojo, los únicos cambios de contexto que ocurren son los generados por el abandono voluntario de la cpu por parte del proceso en ejecución, ya sea por finalización o llamada a syscall.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Pueden ocurrir interrupciones asícronas, como el fin de una IO, que por más que el planificador no tenga en cuenta para replanificar, deberá ser atendida, generando cambios de contexto."
+	},
+	{"id": 14,
+	"fecha": "15 feb 2016",
+	"pregunta": "Los ULTs que son creados por una biblioteca que implementa las entradas salidas mediante la técnica de jacketing se comportan igual que los KLTs.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Los KLTs pueden ejecutar en paralelo en distintos procesadores y los ULTs no."
+	},
+	{"id": 15,
+	"fecha": "15 feb 2016",
+	"pregunta": "Es posible realizar symbolic links sobre archivos de otros file systems, aún si los mismos no son mantenidos. Sin embargo, no se puede hacer lo mismo con los hardlinks, al menos que ambos file systems sean de tipo UFS (Unix FS).",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "En ninguna forma se pueden realzar hardlinks, el número de inodo de la entrada de directorio apuntaría a un archivo del mismo volumen (partición formateada)."
+	},
+	{"id": 16,
+	"fecha": "15 feb 2016",
+	"pregunta": "Si bien la técnica de Buddy System permite particionar la memoria en huecos muy pequeños, puede dejar huecos imposibles de asignar.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "Siempre pueden quedar huecos imposibles de asignar si se produce fragmentación externa."
+	},
+	{"id": 17,
+	"fecha": "15 feb 2016",
+	"pregunta": "Si en un sistema no se utiliza ninguna técnica de detección/evasión/prevención de deadlocks, si ocurre un deadlock, no se podrá realizar ningún trabajo útil.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Los procesos en estado de deadlock no podrán avanzar con sus tareas. Sin embargo, otros procesos que no requieran instancias retenidas por los procesos involucrados podrán progresar correctamente."
+	},
+	{"id": 18,
+	"fecha": "15 feb 2016",
+	"pregunta": "Se tiene un sistema de paginación por demanda, con páginas de 8 KiB que trabaja con dos discos rígidos. Uno para Swap y el otro con un File System tipo Unix. El FS Unix posee bloques de 1 KiB y punteros de 32 bits, donde cada INodo posee diez punteros directos, dos indirectos simples, uno doble y uno triple.<br> Se quiere saber cuántas operaciones sobre bloques se requieren para crear el proceso que se va a ejecutar, si se sabe que el ejecutable ocupa 300MiB y el proceso tendrá un tamaño de 350MiB.<br><i class='nota'>*Recuerde que para el disco de SWAP se requiere que el proceso pueda ser accedido tanto para lectura como para escritura en el modo más rápido posible.</i>",
+	"tipo": "numericinput",
+	"respuesta": {"value": 44800, "precision": 0}
 	}
 	]
 }
