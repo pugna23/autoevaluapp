@@ -1,0 +1,74 @@
+{
+	"questions": [
+	{"id": 1,
+	"fecha": "25 feb 2014",
+	"pregunta": "En paginación con memoria virtual, la lectura de una variable podría implicar tres accesos a disco.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "Esto sucede en los casos de paginación jerárquica de varios niveles. En este caso se tiene un acceso a la página, uno a la tabla de páginas externas y luego a la tabla de páginas internas (y a las sucesivas tablas si es que hay más niveles)."
+	},
+	{"id": 2,
+	"fecha": "25 feb 2014",
+	"pregunta": "En la mayoría de los filesystems, un directorio o carpeta es un archivo cuyo contenido está formado por el contenido de los archivos que el directorio contiene.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Un directorio o carpeta está formado por referencias a otros archivos y/o directorios."
+	},
+	{"id": 3,
+	"fecha": "25 feb 2014",
+	"pregunta": "La imagen de un proceso está formada por los datos (estáticos y dinámicos), el código, la pila y el PCB. Ante la suspensión del mismo, todos estos elementos son llevados a disco para liberar espacio memoria física, y así poder ingresar un nuevo proceso.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "El PCB siempre debe permanecer en memoria."
+	},
+	{"id": 4,
+	"fecha": "25 feb 2014",
+	"pregunta": "Si los procesos no proveen información sobre las duraciones de sus ráfagas, entonces no se pueden aplicar algoritmos de planificación como el SJF",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Partiendo de un valor inicial estimado default para todos los procesos (o hilos) es posible utilizar este algoritmo. Con las sucesivas ráfagas y estimaciones ese valor estimado se irá corrigiendo para cada proceso."
+	},
+	{"id": 5,
+	"fecha": "25 feb 2014",
+	"pregunta": "Es posible que una entrada-salida realizada desde un ULT no bloquee al resto de los ULTs del mismo padre.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "Una forma de lograrlo es a través de jacketing. De esta forma, los ULTs llamarían a funciones de la biblioteca en vez de directamente al SO, y la misma se encargaría de convertir dichas llamadas al sistema bloqueantes en otras no bloqueantes, de forma que se puedan ejecutar el resto de los ULTs."
+	},
+	{"id": 6,
+	"fecha": "3 mar 2015",
+	"pregunta": "Se detecta que el planificador de largo plazo está ejecutándose con mayor frecuencia que el de mediano plazo. Si el grado de multiprogramación se mantuvo, esto podría significar que está ocurriendo thrashing.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Si el de mediano plazo ejecuta relativamente poco es porque hay poco swapping. Entonces, no debería haber thrashing, sino procesos que empiezan y terminan sin problemas."
+	},
+	{"id": 7,
+	"fecha": "3 mar 2015",
+	"pregunta": "No hay forma de que dos procesos sincronizados, que ejecutan en diferentes computadoras, queden en deadlock entre sí.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Si se los comunica usando paso de mensajes, ambos envían un mensaje y ambos quedan bloqueados esperando otro mensaje (por ej un OK del otro), es posible que queden en deadlock (de hecho es un error de algunos tps, cuando recién arrancan). También se da mucho en DBs distribuidas, aunque excede los ejemplos que vemos habitualmente."
+	},
+	{"id": 8,
+	"fecha": "3 mar 2015",
+	"pregunta": "Cuantos más niveles hay en un esquema de paginación multinivel, más importante es el uso de una TLB.",
+	"tipo": "vof",
+	"respuesta": "Verdadero",
+	"justifica": "Cuando los niveles se incrementan, también lo hacen los accesos a tablas de páginas. Por ende, tener una TLB con un buen “hit ratio” evita cada vez más accesos."
+	},
+	{"id": 9,
+	"fecha": "3 mar 2015",
+	"pregunta": "Implementar la estrategia de “Evasión” implica sólo verificar que el Sistema esté en Estado Seguro cuando se pide un recurso.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "Implica chequear que haya instancias de ese recurso, que no se pase del máximo que puede pedir ese proceso, luego simular otorgarle el recurso y chequear estado seguro y recién ahí otorgarlo."
+	},
+	{"id": 10,
+	"fecha": "3 mar 2015",
+	"pregunta": "En FAT, la lectura de un bloque de datos podría requerir menos accesos a disco que con EXT (con un igual tamaño de bloque). A su vez, FAT permite el acceso directo gracias a su asignación de bloques indexada.",
+	"tipo": "vof",
+	"respuesta": "Falso",
+	"justifica": "La primera afirmación es correcta ya que teniendo la FAT en RAM, sólo se acceden a bloques de datos, mientras que en EXT se podría requerir acceder a algún bloque de PTR. Sin embargo, la segunda afirmación es incorrecta ya que FAT utiliza una asignación de bloques encadenada/enlazada (no hay un índice por cada archivo)"
+	}
+	]
+}

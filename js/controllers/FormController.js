@@ -43,6 +43,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 	
 	$scope.startTest = function() {
 		$scope.readyTest = true;
+		$("#divMaterias").hide("slow");
 	};
 	
 	$scope.generateOptions = function() {

@@ -1,27 +1,18 @@
 {
-	"p1" : {
-		"id": 1,
-		"fecha": "01 Jan 2001",
-		"pregunta": "la pregunta 1?",
-		"tipo": "ChoiceSimple",
-		"opciones": ["Opcion A", "Opcion B", "Opcion C"],
-		"respuesta": "Opcion A",
-		"justifica": "bla"
+	"questions": [
+	{"id": 1,
+	"fecha": "",
+	"pregunta": "",
+	"tipo": "",
+	"respuesta": "",
+	"justifica": ""
 	},
-	"p2" : {
-		"id": 2,
-		"fecha": "13 Feb 2010",
-		"img": "img/p2.png",
-		"tipo": "VoF",
-		"pregunta": "la pregunta 2?",
-		"respuesta": "Falso"
+	{"id": 2,
+	"fecha": "",
+	"pregunta": "",
+	"tipo": "",
+	"respuesta": "",
+	"justifica": ""
 	}
-	"p3" : {
-		"id": 3,
-		"fecha": "14 Apr 2015",
-		"pregunta": "la pregunta 3?",
-		"tipo": "Input",
-		"label": "K =",
-		"respuesta": "8"
-	}
+	]
 }

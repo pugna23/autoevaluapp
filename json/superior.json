@@ -1,321 +1,321 @@
 {
-	"questions": [{
-		"id": 1,
+	"questions": [
+	{"id": 1,
 		"fecha": "1 dec 2015",
 		"pregunta": "Calcular el valor de la integral <img src='img/082032-01.gif'> por Transformada De Laplace.",
 		"tipo": "numericinput",
 		"respuesta": { "value": 0.24, "precision": 2}
-	},{
-		"id" : 2,
+	},
+	{"id": 2,
 		"fecha": "1 dec 2015",
 		"tipo": "numericinput",
 		"pregunta": "La transferencia <img src='img/082032-02.gif'> corresponde a un sistema estable solamente con un valor de la constante real K. ¿Cuál es el valor de K?",
 		"label": "K = ",
 		"respuesta": { "value": 2, "precision": 0}
-	},{
-		"id": 3,
+	},
+	{"id": 3,
 		"fecha": "1 dec 2015",
 		"tipo": "input",
 		"pregunta": "Al resolver la integral <img src='img/082032-03.gif'> por el método de trapecios se obtiene un valor .......... al exacto.",
 		"respuesta": "mayor"
-	},{
-		"id" : 4,
+	},
+	{"id": 4,
 		"fecha": "22 dec 2015",
 		"tipo": "numericinput",
 		"pregunta": "Dada <img src='img/082032-04.gif'>, para que el valor medio de dicha función sea 4, el valor de k &isin; R debe ser:",
 		"label": "k = ",
 		"respuesta": {"value": 4.5, "precision": 1}
-	},{
-		"id": 5,
+	},
+	{"id": 5,
 		"fecha": "22 dec 2015",
 		"tipo": "ChoiceSimple",
 		"pregunta": "La serie trigonométrica de Fourier de <img src='img/082032-04.gif'><br>(con cualquier k &isin; R) es solo de:",
 		"opciones": ["Senos", "Cosenos", "Frecuencias impares"],
 		"respuesta": "Cosenos"
-	},{
-		"id": 6,
+	},
+	{"id": 6,
 		"fecha": "22 dec 2015",
 		"tipo": "ChoiceSimple",
 		"pregunta": "Dada <img src='img/082032-06.gif'> y las proposiciones r, s, t, u, siendo: <br> p: Es posible resolverla por Simpson con h=0.3; <br> q: Al resolverla por Trapecios con h=0.1 se obtiene un valor menor al exacto. <br> La única verdadera es:",
 		"opciones": ["r: &not;p &and; q", "s: &not;p &and; &not;q", "t: p &and; &not;q", "u: p &and; q"],
 		"respuesta": "s: &not;p &and; &not;q"
-	},{
-		"id": 7,
+	},
+	{"id": 7,
 		"fecha": "14 Feb 2013",
 		"tipo": "numericinput",
 		"pregunta": "Al resolver la integral <img src='img/082032-07.gif'> por Trapecios con h=0.1, puede asegurarse un error menor que:",
 		"label": "| E | ≤ ",
-		"respuesta": {"value": 0.00148753, "precision": 8} 
-	},{
-		"id": 8,
+		"respuesta": {"value": 0.00148753, "precision": 5} 
+	},
+	{"id": 8,
 		"fecha": "17 Jul 2014",
 		"pregunta": "El valor principal del complejo z = (<sup>3</sup>/<sub>5</sub>  -  j <sup>4</sup>/<sub>5</sub>)<sup>3j</sup> es:",
 		"tipo": "choicesimple",
 		"opciones": ["Imaginario puro", "Real positivo", "Real negativo", "Complejo no real<br> ni imaginario"],
 		"respuesta": "Real positivo"
-	},{
-		"id": 9,
+	},
+	{"id": 9,
 		"fecha": "17 jul 2014",
 		"pregunta": "Los coeficientes de la Serie Exponencial de Fourier de <br>f(t) = sen(t) si 0 < t < &pi; &and; f(t) = f(t + &pi;) son:",
 		"tipo": "choicesimple",
 		"opciones": ["Todos reales","Todos imaginarios","Uno real y el resto <br>imaginarios","Ninguno de los anteriores"],
 		"respuesta": "Todos reales"
-	},{
-		"id": 10,
+	},
+	{"id": 10,
 		"fecha": "17 jul 2014",
 		"pregunta": "El valor de la integral <img src='img/082032-10.gif'> calculada con Transformada de Laplace es:",
 		"tipo": "numericinput",
 		"respuesta": {"value": -0.4, "precision": 1}
-	},{
-		"id": 11,
+	},
+	{"id": 11,
 		"fecha": "17 jul 2014",
 		"pregunta": "Si un sistema responde a la entrada x(t) = e<sup>-3t</sup>(1-5t) de forma acotada, entonces:",
 		"tipo": "choicesimple",
 		"opciones": ["El sistema seguro es estable","El sistema puede ser <br>estable o inestable","El sistema seguro<br> es inestable","El sistema es <br>marginalmente estable"],
 		"respuesta": "El sistema puede ser estable o inestable"
-	},{
-		"id": 12,
+	},
+	{"id": 12,
 		"fecha": "17 jul 2014",
 		"pregunta": "No existe polinomio de grado 2 que pase por los puntos (0, 2), (2, 6), (4, a) y (6, b).",
 		"tipo": "choicesimple",
 		"opciones": ["Sólo si a=10 y b=14","Sólo si b – 3a + 16 = 0","Sólo si b – 3a + 16 ≠ 0", "Ninguna de las anteriores"],
 		"respuesta": "Ninguna de las anteriores",
 		"justifica": "Se cumple si a=10 y b=14 ó si b – 3a + 16 ≠ 0."
-	},{
-		"id": 13,
+	},
+	{"id": 13,
 		"fecha": "5 aug 2010",
 		"pregunta": "La superposición de dos ondas senoidales de igual frecuencia y distinta amplitud, <u>puede</u> ser:",
 		"tipo": "choicesimple",
 		"opciones": ["De distinta frecuencia<br> de las dadas","De amplitud igual a la<br> suma de ambas amplitudes", "Una función no senoidal", "Ninguna de las anteriores"],
 		"respuesta": "De amplitud igual a la suma de ambas amplitudes",
 		"justifica": "Si están en fase, la amplitud es la suma de las amplitudes."
-	},{
-		"id": 14,
+	},
+	{"id": 14,
 		"fecha": "5 aug 2010",
 		"pregunta": "Sea f(t) = 4 - t<sup>2</sup> en (0;1); f(t) = t<sup>2</sup>+2 en (-1;0) con periodo T=2. <br> El desarrollo en Serie exponencial de Fourier tiene sus coeficientes:",
 		"tipo": "choicesimple",
 		"opciones": ["Todos reales","Ninguno real","Todos imaginarios puros","Ninguna de las anteriores"],
 		"respuesta": "Ninguna de las anteriores",
 		"justifica": "Por ser suma de una función impar más una constante, la SEF tiene un coeficiente real (el c<sub>0</sub>) y los demás imaginarios puros."
-	},{
-		"id": 15,
+	},
+	{"id": 15,
 		"fecha": "5 aug 2010",
 		"pregunta": "Para que la transferencia <img src='img/082032-15.gif'> corresponda a un sistema estable, entonces:",
 		"tipo": "choicesimple",
 		"opciones": ["k = 0", "k = 8", "k puede tomar cualquier<br> valor real", "No existe valor de k &isin; R"],
 		"respuesta": "k = 8",
 		"justifica": "Para que sea estable, 2 no debe ser polo, entonces el factor (s-2) del denominador debe anularse con el mismo en el numerador, o sea que 2 debe ser raíz del numerador  &rArr;  4-2k+12=0  &rArr;  k=8"
-	},{
-		"id": 16,
+	},
+	{"id": 16,
 		"fecha": "26 jul 2012",
 		"pregunta": "Dados 40 puntos (xi ; yi) todos con abscisas distintas, y sabiendo que por 30 de ellos pasa un polinomio de grado 20, puede asegurarse que por los 40 puntos NO pasa polinomio de:",
 		"tipo": "choicesimple",
 		"opciones": ["Grado 15", "Grado 20", "Grado 35", "Grado 40"],
 		"respuesta": "Grado 15"
-	},{
-		"id": 17,
+	},
+	{"id": 17,
 		"fecha": "26 jul 2012",
 		"pregunta": "Dadas las funciones <img src='img/082032-17.gif'>, para hallar la raíz cuadrada de 40 por el método de punto fijo, converge:",
 		"tipo": "choicesimple",
 		"opciones": ["Solo con g1","Solo con g2","Con ambas","Con ninguna"],
 		"respuesta": "Con ambas"
-	},{
-		"id": 18,
+	},
+	{"id": 18,
 		"fecha": "26 jul 2012",
 		"pregunta": "Si al resolver la integral <img src='img/082032-18.gif'> por Trapecios tomando 20 subintervalos se obtiene un error del orden de 0.1, entonces si se toman 40 subintervalos, el error aproximadamente va a ser:",
 		"tipo": "choicesimple",
 		"opciones": [0.01,0.05,0.025,0.0001],
 		"respuesta": 0.025
-	},{
-		"id": 19,
+	},
+	{"id": 19,
 		"fecha": "08 aug 2013",
 		"pregunta": "Sea A = { z &isin; C / Re(z<sup>3</sup>) = z + <span class='overline'>z</span> }, entonces:",
 		"tipo": "choicesimple",
 		"opciones": ["A es conjunto vacío","&forall;z &isin; A : z es imaginario puro","&exist;z : z &isin; R &and; z &isin; A","Ninguna de las anteriores"],
 		"respuesta": "&exist;z : z &isin; R &and; z &isin; A"
-	},{
-		"id": 20,
+	},
+	{"id": 20,
 		"fecha": "08 aug 2013",
 		"pregunta": "La razón por la cual al utilizar los polinomios de Legendre para aproximar una función por un polinomio de grado n en un intervalo dado, no se necesita resolver sistema de ecuaciones alguno, es que dichos polinomios son:",
 		"tipo": "choicesimple",
 		"opciones":["De norma unitaria","Ortogonales en [-1;1]","Base del conjunto de<br> polinomios de grado <= n","Ninguna de las anteriores"],
 		"respuesta": "Ortogonales en [-1;1]"
-	},{
-		"id": 21,
+	},
+	{"id": 21,
 		"fecha": "08 aug 2013",
 		"pregunta": "¿Cuál de estos sistemas es posible resolver por Gauss-Seidel? <br><img src='img/082032-21.png'>",
 		"tipo": "choicesimple",
 		"opciones": ["Solamente el primero","Solo el segundo","Ambos","Ninguno de los dos"],
 		"respuesta": "Solamente el primero",
 		"justifica": "En el primero, si permutamos filas ( 2 – 3 – 1) queda diagonal dominante, pero en el segundo no hay forma de lograrlo pues tanto en la primer fila como en la tercera, el mayor elemento es el del medio."
-	},{
-		"id": 22,
+	},
+	{"id": 22,
 		"fecha": "8 aug 2013",
 		"pregunta": "La fórmula: <img src='img/082032-22.gif'> es:",
 		"tipo": "choicesimple",
 		"opciones": ["De paso simple","De 3 pasos","Implícita","Etapa predictora"],
 		"respuesta":"Etapa predictora",
 		"justifica": "La fórmula dada es de un método de 4 pasos (ya que utiliza 4 anteriores); es explícita pues no necesita el mismo w<sub>i+1</sub> que calcula, por eso puede usarse como etapa predictora."
-	},{
-		"id": 23,
+	},
+	{"id": 23,
 		"fecha": "2 oct 2014",
 		"pregunta": "Con el método de Euler se puede resolver cualquier problema de valor inicial, ya que si se necesita mayor precisión, se hacen más iteraciones y se logra.",
 		"tipo": "vof",
 		"respuesta": "Falso",
 		"justifica": "Cuantas más iteraciones, mayores errores operativos que no permiten lograr la precisión deseada."
-	},{
-		"id": 24,
+	},
+	{"id": 24,
 		"fecha": "2 oct 2014",
 		"pregunta":"Los métodos de Runge-Kutta son de paso múltiple y muy precisos.",
 		"tipo": "vof",
 		"respuesta": "Falso",
 		"justifica": "Son de paso simple."
-	},{
-		"id": 25,
+	},
+	{"id": 25,
 		"fecha": "2 oct 2014",
 		"pregunta": "Las fórmulas implícitas se utilizan para mejorar la precisión de las explicitas.",
 		"tipo": "vof",
 		"respuesta": "Verdadero",
 		"justifica": "No pueden usarse por si solas, sino como etapa correctora de los métodos predictor-corrector."
-	},{
-		"id": 26,
+	},
+	{"id": 26,
 		"fecha": "2 oct 2014",
 		"pregunta": "De las siguientes funciones, una sola forma parte del desarrollo en Serie Trigonométrica de Fourier de:<br>  f(t) = t en (-&pi;, &pi;)  y    f(t) = f( t + 2&pi; )  Indique cuál es",
 		"tipo": "choicesimple",
 		"opciones": ["x(t) = cos(t)", "x(t) = 1", "x(t) = sen(2t)","x(t) = cos(&pi;t)","x(t) = sen(&pi;t)"],
 		"respuesta": "x(t) = sen(2t)"
-	},{
-		"id": 27,
+	},
+	{"id": 27,
 		"fecha": "23 feb 2012",
 		"pregunta": "Sea un conjunto de n puntos (x<sub>i</sub> , y<sub>i</sub>) donde y<sub>i</sub> = x<sub>i</sub><sup>n</sup> , entonces por ellos pasan .......... polinomios de grado n.",
 		"tipo": "input",
 		"respuesta": "infinitos"
-	},{
-		"id": 28,
+	},
+	{"id": 28,
 		"fecha": "23 feb 2012",
 		"pregunta": "Al desarrollar la función f(t) = sen(&pi; t) si t &isin; (0,1)  y f(t)=f(t+1) en Serie Exponencial de Fourier sólo hay términos con coeficientes REALES.",
 		"tipo": "vof",
 		"respuesta": "Verdadero",
 		"justifica": "La función f(t) = sen(&pi; t) si t &isin; (0,1)  y f(t)=f(t+1) es una función par, por lo tanto los b<sub>n</sub> = 0. Teniendo en cuenta que c<sub>n</sub> = <sup>a<sub>n</sub> - j b<sub>n</sub></sup>/<sub>2</sub> en este caso será: c<sub>n</sub> = <sup>a<sub>n</sub></sup>/<sub>2</sub>  &isin; R ."
-	},{
-		"id": 29,
+	},
+	{"id": 29,
 		"fecha": "23 feb 2012",
 		"pregunta": "Puede ocurrir que al resolver un sistema de ecuaciones lineales por el método de Jacobi no converja a la solución, pero que por Gauss-Seidel sí lo haga.",
 		"tipo": "vof",
 		"respuesta": "Falso",
 		"justifica": "La condición necesaria y suficiente de convergencia de ambos métodos es la misma, que la matriz de coeficientes sea diagonal dominante."
-	},{
-		"id": 30,
+	},
+	{"id": 30,
 		"fecha": "24 may 2012",
 		"pregunta": "Para lograr mayor precisión al resolver una ecuación diferencial es conveniente aplicar el método de Euler con h más pequeño en vez de utilizar un método de mayor orden.",
 		"tipo": "vof",
 		"respuesta": "Falso",
 		"justifica": "Para lograr mayor precisión al resolver una ecuación diferencial no siempre es conveniente aplicar el método de Euler con h más pequeño en vez de utilizar un método de mayor orden, ya que los errores operativos en los que se incurre pueden opacar esa supuesta mayor precisión que se cree lograr."
-	},{
-		"id": 31,
+	},
+	{"id": 31,
 		"fecha": "18 dec 2012",
 		"pregunta": "La ecuación z<sup>2</sup> – 2j z  - 9 - 6 j = 0 tiene como solución:",
 		"tipo": "choicesimple",
 		"opciones": ["Dos complejos conjugados","Dos imaginarios puros","Un real y un complejo no real","Ninguna de las anteriores"],
 		"respuesta": "Un real y un complejo no real",
 		"justifica": "Las raíces son: -3  y 3+2j."
-	},{
-		"id": 32,
+	},
+	{"id": 32,
 		"fecha": "18 dec 2012",
 		"pregunta": "Los coeficientes de la Serie Exponencial de Fourier de f(x) = cos(&pi;x) en (0,1)  &and;  f(x) = f(x+1) son:",
 		"tipo": "choicesimple",
 		"opciones": ["Todos reales","Todos imaginarios puros","Uno real y los<br> demás imaginarios","Ninguna de las anteriores"],
 		"respuesta": "Todos imaginarios puros",
 		"justifica": "La función es impar."
-	},{
-		"id": 33,
+	},
+	{"id": 33,
 		"fecha": "18 dec 2012",
 		"pregunta": "Sea <img src='img/082032-33.gif'> entonces la respuesta del sistema a un escalón E(t) es:",
 		"tipo": "choicesimple",
 		"opciones": ["Oscilatoria amortiguada","Oscilatoria pura","Exponencial decreciente","Ninguna de las anteriores"],
 		"respuesta": "Oscilatoria pura",
 		"justifica": "Queda y(t) = sen(3t)."
-	},{
-		"id": 34,
+	},
+	{"id": 34,
 		"fecha": "18 dec 2012",
 		"pregunta": "La función f(x) = sen(4x) - 1 + <sup>x</sup>/<sub>2</sub> tiene solamente:",
 		"tipo": "choicesimple",
 		"opciones": ["Una única raíz real","Dos raíces reales","Tres raíces reales","Ninguna de las anteriores"],
 		"respuesta": "Ninguna de las anteriores",
 		"justifica": "Tiene en total 5 raíces reales."
-	},{
-		"id": 35,
+	},
+	{"id": 35,
 		"fecha": "18 dec 2012",
 		"pregunta": "Sea A una matriz simétrica de orden n. Puede asegurarse que:",
 		"tipo": "choicesimple",
 		"opciones": ["A es diagonal dominante","||A||<sub>1</sub> = ||A||<sub>&infin;</sub>","A es inversible","Ninguna de las anteriores"],
 		"respuesta": "||A||<sub>1</sub> = ||A||<sub>&infin;</sub>",
 		"justifica": "Por ser simétrica, es igual a su traspuesta."
-	},{
-		"id": 36,
+	},
+	{"id": 36,
 		"fecha": "18 dec 2012",
 		"pregunta": "El polinomio que interpola a los puntos (0; 3), (2; 7), (3; 9)  y  (k ; 2k) es:",
 		"tipo": "choicesimple",
 		"opciones": ["De grado 3, &forall; k &isin; R","Nunca es de grado 3","&exist; k tal que sea de grado 1","Ninguna de las anteriores"],
 		"respuesta": "De grado 3, &forall; k &isin; R",
 		"justifica": "Se consideran abscisas k distintas a las dadas. Por los tres primeros puntos pasa la recta p(x) = 2x+3, y el otro punto no verifica por estar en una recta paralela."
-	},{
-		"id": 37,
+	},
+	{"id": 37,
 		"fecha": "18 dec 2012",
 		"pregunta": "El valor del área comprendida entre las funciones   y = x + 1 ,  y = <sup>2 x - 1</sup> / <sub>x - 1</sub><br>  y  el eje x entre 1 y 5 por Trapecios es:",
 		"tipo": "choicesimple",
 		"opciones": ["Menor al exacto","Mayor al exacto","Igual al exacto","Ninguna de las anteriores"],
 		"respuesta":"Mayor al exacto",
 		"justifica": "Por ser cóncava hacia arriba en la hipérbola."
-	},{
-		"id": 38,
+	},
+	{"id": 38,
 		"fecha": "24 may 2012",
-		"pregunta": "La siguiente fórmula:       <img src='img/082032-38.gif'> correspondiente a un método de resolución de ecuaciones diferenciales es explícita y de 3 pasos.",
+		"pregunta": "La siguiente fórmula:  <img src='img/082032-38.gif'> correspondiente a un método de resolución de ecuaciones diferenciales es explícita y de 3 pasos.",
 		"tipo": "vof",
 		"respuesta":"Falso",
 		"justifica": "Corresponde a un método IMPLICITO (figura el w<sub>i+1</sub> que se quiere calcular) y de 2 pasos (es la cantidad de w anteriores, en este caso w<sub>i</sub> y w<sub>i-1</sub>)."
-	},{
-		"id": 39,
+	},
+	{"id": 39,
 		"fecha": "15 dec 2011",
 		"pregunta": "Existen infinitos complejos z que verifican:    Re[ln(z)] + z<sup>2</sup> = |z|<sup>2</sup>",
 		"tipo": "vof",
 		"respuesta":"Falso",
 		"justifica": "Los únicos complejos son (1;0) y (-1;0)."
-	},{
-		"id": 40,
+	},
+	{"id": 40,
 		"fecha": "15 dec 2011",
 		"pregunta": "El desarrollo en Serie exponencial de Fourier de f(x) = cos(x)  si x &isin; (0,&pi;)   &and;  f(x) = f(x+&pi;)     tiene todos los coeficientes imaginarios puros.",
 		"tipo": "vof",
 		"respuesta":"Verdadero",
 		"justifica": "La función dada es IMPAR, por lo tanto los coeficientes c<sub>n</sub> son imaginarios puros."
-	},{
-		"id": 41,
+	},
+	{"id": 41,
 		"fecha": "15 dec 2011",
 		"pregunta": "NO es posible hallar algún valor de &phi; &isin; R para que el fasor correspondiente a la suma de las funciones:<br> f(t) = A cos(w t - &pi;/6)  y  g(t) = A cos(wt + &phi;) sea imaginario puro.",
 		"tipo": "vof",
 		"respuesta":"Falso",
 		"justifica": "Es posible, tomando &phi; = 7/6 &pi;."
-	},{
-		"id": 42,
+	},
+	{"id": 42,
 		"fecha": "15 dec 2011",
 		"pregunta": "Para cualquier función f, sea p &isin; R : si  | f(p) | < 0.001, entonces la distancia de p a una raíz es menor a 0.001.",
 		"tipo": "vof",
 		"respuesta":"Falso",
 		"justifica": "Puede ni haber raíz, por ejemplo f(x) = x2 + 0.0008 , f(0) < 0.001 pero no hay raíz. O bien aunque exista raíz, su la pendiente es suave, la distancia puede ser mucho mayor. Por ejemplo, si f(x) = ln(x/2) cuya raíz es p = 2, resulta que f(2.002) = 0,0009995 < 0.001 pero la distancia a la raíz es de 0.002."
-	},{
-		"id": 43,
+	},
+	{"id": 43,
 		"fecha": "15 dec 2011",
-		"pregunta": "El problema de valor inicial:  <i>y’(t) = - t y</i> con y(0) = 1<br>Cumple la condición de Lipschitz en R = { (t,y) &isin; R<sup>2</sup> /  0 &le; t &le; 3 &and; 0 &le; y &le; 2 } con la menor constante:",
+		"pregunta": "El problema de valor inicial:  y’(t) = - ty con y(0) = 1<br>Cumple la condición de Lipschitz en R = { (t,y) &isin; R<sup>2</sup> /  0 &le; t &le; 3 &and; 0 &le; y &le; 2 } con la menor constante:",
 		"tipo": "choicesimple",
 		"opciones": ["L = 1","L = 2","L = 3","Otro valor de L","No cumple la <br>condición de Lipschitz"],
 		"respuesta":"L = 3",
 		"justifica": "| f(t,y<sub>1</sub>) – f(t,y<sub>2</sub>) | = | -t y<sub>1</sub> + t y<sub>2</sub> | = | -t (y<sub>1</sub> – y<sub>2</sub>) | &le;  3 |y<sub>1</sub> – y<sub>2</sub>| &rArr; cumple con L = 3."
-	},{
-		"id": 44,
+	},
+	{"id": 44,
 		"fecha": "15 dec 2011",
 		"pregunta": "Los métodos de Gauss-Seidel y Jacobi para resolver sistemas de ecuaciones lineales convergen solo para matrices de coeficientes A que sean:",
 		"tipo": "choicesimple",
-		"opciones": ["Simétricas","Con norma = 1","Con radio espectral > 1","Diagonal dominante","Depende del vector<br> inicial tomado","Cualquier matriz cuadrada<br> e inversible"],
+		"opciones": ["Simétricas","Con norma = 1","Con radio<br>espectral > 1","Diagonal <br>dominante","Depende del <br>vector inicial <br>tomado","Cualquier matriz<br> cuadrada e <br>inversible"],
 		"respuesta":"Diagonal dominante"
 	}
 	]

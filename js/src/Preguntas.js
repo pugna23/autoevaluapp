@@ -43,7 +43,7 @@ function createPregunta(pregunta) {
 		return new NumericInput(pregunta);
 		break;
 	default:
-		return new InputSimple(pregunta);
+		console.error("No coincide con ninguna pregunta el tipo " + pregunta.tipo + "(#" + pregunta.id + ").");
 	}
 }
 

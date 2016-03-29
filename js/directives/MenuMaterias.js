@@ -14,7 +14,7 @@ app.directive("menuMaterias",function() {
 			$scope.seleccionar = function(materia) {
 				console.log(materiaservice);
 				$scope.seleccionada.set(materia);
-				$("#divMaterias").hide("slow");
+				//$("#divMaterias").hide("slow");
 			}
 		},
 		controllerAs: 'MatController'

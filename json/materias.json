@@ -3,5 +3,10 @@
 				"nombre": "Matemática Superior",
 				"codigo": "082032",
 				"archivo": "json/superior.json"
+	},
+	"operativos": {
+		"nombre": "Sistemas Operativos",
+		"codigo": "082027",
+		"archivo": "json/operativos.json"
 	}
 }
