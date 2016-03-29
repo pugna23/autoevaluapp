@@ -9,7 +9,7 @@ function disableElement (elem) {
 }
 
 
-app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materiaservice', function($scope, $compile, $document, $http, materiaservice) {
+app.controller('FormCtrller', ['$scope','$compile','$document', '$http', function($scope, $compile, $document, $http) {
 	
 	$scope.materiaSeleccionada = new Materia({"nombre": "Matemática Superior",
 			"codigo": "082032", "archivo": "json/superior.json"});
@@ -21,6 +21,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 	$scope.resetTest = function() {
 		$scope.cantPreguntas = 5;
 		$scope.readyTest = false;
+		$("#divMaterias").show("slow");
 		$scope.preguntasContestadas = [];
 		$scope.correctas = 0;
 		$scope.incorrectas = 0;
@@ -41,6 +42,14 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		});
 	};
 	
+	$scope.changeMateria = function(subject) {
+		$scope.materiaSeleccionada = subject;
+		$("#divRespuesta").empty();
+		$("#enunciado").width("100%");
+		$("imagen-modal").remove();
+		$scope.resetTest();
+	}
+	
 	$scope.startTest = function() {
 		$scope.readyTest = true;
 		$("#divMaterias").hide("slow");
@@ -60,10 +69,8 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', 'materi
 		var rnd = 0;
 		do {
 			rnd = Math.floor(Math.random()*($scope.materiaSeleccionada.preguntas.length));
-			console.log(rnd);
 		} while ($.inArray(rnd,$scope.preguntasContestadas) > -1);
 		$scope.preguntasContestadas.push(rnd);
-		console.log($scope.preguntasContestadas);
 		$scope.question = $scope.materiaSeleccionada.preguntas[rnd];
 	};
 
