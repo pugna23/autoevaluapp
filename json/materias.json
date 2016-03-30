@@ -8,5 +8,10 @@
 		"nombre": "Sistemas Operativos",
 		"codigo": "082027",
 		"archivo": "json/operativos.json"
+	},
+	"dummysubject": {
+		"nombre": "dummy",
+		"codigo": "999999",
+		"archivo": "json/example/dummysubject.json"
 	}
 }

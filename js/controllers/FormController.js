@@ -25,7 +25,6 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', functio
 		$scope.preguntasContestadas = [];
 		$scope.correctas = 0;
 		$scope.incorrectas = 0;
-		$scope.answered = null;
 		$http.get($scope.materiaSeleccionada.archivo).then(function(response) {
 			var list = response.data.questions;
 			$scope.materiaSeleccionada.preguntas = getAllQuestions(list);
@@ -72,6 +71,7 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', functio
 		} while ($.inArray(rnd,$scope.preguntasContestadas) > -1);
 		$scope.preguntasContestadas.push(rnd);
 		$scope.question = $scope.materiaSeleccionada.preguntas[rnd];
+		$scope.answered = $scope.question.defaultAnswer;
 	};
 
 	$scope.cargarEnunciado = function() {
@@ -109,7 +109,6 @@ app.controller('FormCtrller', ['$scope','$compile','$document', '$http', functio
 	
 	
 	$scope.resetQuestion = function () {
-		$scope.answered = null;
 		enableElement("#btnRta");
 		disableElement("#btnSiguiente");
 		$scope.question.aceptarRespuestas();

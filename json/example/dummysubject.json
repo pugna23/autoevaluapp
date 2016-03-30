@@ -1,0 +1,60 @@
+{
+	"questions": [
+	{"id": 1,
+	"fecha": "13 apr 2010",
+	"pregunta": "F F V F",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"],
+	"respuesta": [false, false, true, false]
+	},
+	{"id": 2,
+	"fecha": "25 may 2013",
+	"pregunta": "F F V V F",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
+	"respuesta": [false, false, true, true, false]
+	},
+	{"id": 3,
+	"fecha": "12 nov 2012",
+	"pregunta": "all false",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3"],
+	"respuesta": [false, false, false]
+	},
+	{"id": 4,
+	"fecha": "7 nov 2014",
+	"pregunta": "all true",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
+	"respuesta": [true, true, true, true, true]
+	},
+	{"id": 5,
+	"fecha": "15 jul 2014",
+	"pregunta": "T T F T",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"],
+	"respuesta": [true, true, false, true]
+	},
+	{"id": 6,
+	"fecha": "20 oct 2015",
+	"pregunta": "T T F",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3"],
+	"respuesta": [true, true, false]
+	},
+	{"id": 7,
+	"fecha": "8 feb 2013",
+	"pregunta": "F T F T T",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
+	"respuesta": [false, true, false, true, true]
+	},
+	{"id": 8,
+	"fecha": "8 feb 2015",
+	"pregunta": "T F F F T",
+	"tipo": "choicecb",
+	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
+	"respuesta": [true, false, false, false, true]
+	}
+	]
+}
