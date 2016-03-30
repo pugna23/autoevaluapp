@@ -34,6 +34,8 @@ function NumericInput(obj) {
 		return (this.respuesta.value.toFixed($precision + 3) == valor.toFixed($precision + 3));
 	}
 	
-	this.stringRespuesta = this.respuesta.value;
+	this.stringRespuesta = function() {
+		return this.respuesta.value;
+	}
 }
 NumericInput.prototype = InputSimple;

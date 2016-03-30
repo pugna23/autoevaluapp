@@ -19,7 +19,9 @@ function Pregunta(param) {
 		this.respuesta === rta;
 	}
 	
-	this.stringRespuesta = this.respuesta;
+	this.stringRespuesta = function() {
+		return this.respuesta;
+	}
 }
 
 function getAllQuestions(materia) {
@@ -35,6 +37,9 @@ function createPregunta(pregunta) {
 		break;
 	case "VOF":
 		return new VoF(pregunta);
+		break;
+	case "CHOICECHECK":
+		return new ChoiceCheckbox(pregunta);
 		break;
 	case "INPUT":
 		return new InputSimple(pregunta);

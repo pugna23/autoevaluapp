@@ -123,7 +123,8 @@
 	"fecha": "15 feb 2016",
 	"pregunta": "Se tiene un sistema de paginación por demanda, con páginas de 8 KiB que trabaja con dos discos rígidos. Uno para Swap y el otro con un File System tipo Unix. El FS Unix posee bloques de 1 KiB y punteros de 32 bits, donde cada INodo posee diez punteros directos, dos indirectos simples, uno doble y uno triple.<br> Se quiere saber cuántas operaciones sobre bloques se requieren para crear el proceso que se va a ejecutar, si se sabe que el ejecutable ocupa 300MiB y el proceso tendrá un tamaño de 350MiB.<br><i class='nota'>*Recuerde que para el disco de SWAP se requiere que el proceso pueda ser accedido tanto para lectura como para escritura en el modo más rápido posible.</i>",
 	"tipo": "numericinput",
-	"respuesta": {"value": 44800, "precision": 0}
+	"respuesta": {"value": 44800, "precision": 0},
+	"metric": "operaciones de escritura en el disco de Swapp"
 	},
 	{"id": 19,
 	"fecha": "23 feb 2016",
