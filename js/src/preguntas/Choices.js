@@ -67,14 +67,15 @@ function ChoiceCheckbox(obj) {
 	
 	this.stringRespuesta = function() {
 		var str = '';
-		jQuery.each(this.opciones, function(index, rta) {
-			if (this.respuesta[index]) {
+		for (var i=0; i< this.respuesta.length; i++) {
+			if (this.respuesta[i]) {
 				if (str != '') {
 					str = str + "; ";
 				};
-				str = str + rta;
+				str = str + this.opciones[i];
 			};
-		});
+		};
+		if (str == '') str = 'Ninguna opción';
 		return str;
 	};
 };
