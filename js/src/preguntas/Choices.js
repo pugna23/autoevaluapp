@@ -1,5 +1,6 @@
-function Choice(obj) {
+function ChoiceRadio(obj) {
 	Pregunta.apply(this,[obj]);
+	this.opciones = obj.opciones;
 	
 	this.anularRespuestas = function() {
 		$(".choice").addClass("disabled");
@@ -15,7 +16,7 @@ function Choice(obj) {
 		return (100 / this.opciones.length);
 	}
 	
-	this.formRta = "<choice-simple></choice-simple>";
+	this.formRta = "<choice-radio></choice-radio>";
 	
 	this.esCorrecto = function(rta) {
 		if (rta == null) return false;
@@ -23,21 +24,13 @@ function Choice(obj) {
 		return (this.respuesta == noBr(rta));
 	}
 }
-Choice.prototype = Pregunta;
+ChoiceRadio.prototype = Pregunta;
 
 /**************************************************************************/
 
 function VoF(obj) {
-	Choice.apply(this,[obj]);
+	ChoiceRadio.apply(this,[obj]);
 	this.opciones = ["Verdadero","Falso"];
 }
-VoF.prototype = Choice;
-
-/**************************************************************************/
-
-function ChoiceSimple(obj) {
-	Choice.apply(this,[obj]);
-	this.opciones = obj.opciones;
-}
-ChoiceSimple.prototype = Choice;
+VoF.prototype = ChoiceRadio;
 

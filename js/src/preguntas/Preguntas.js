@@ -12,7 +12,7 @@ function Pregunta(param) {
 	this.justifica = obj.justifica;
 	
 	this.tieneImagen = function() {
-		return !(this.img === "" || this.img === null || this.img === '');
+		return !(this.img == "" || this.img === null);
 	}
 	
 	this.esCorrecto = function(rta) {
@@ -30,8 +30,8 @@ function getAllQuestions(materia) {
 
 function createPregunta(pregunta) {
 	switch (pregunta.tipo.toUpperCase()) {
-	case "CHOICESIMPLE":
-		return new ChoiceSimple(pregunta);
+	case "CHOICERADIO":
+		return new ChoiceRadio(pregunta);
 		break;
 	case "VOF":
 		return new VoF(pregunta);

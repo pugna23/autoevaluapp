@@ -1,7 +1,9 @@
 function InputSimple(param) {
 	var obj = $.extend({"label": "Respuesta", "metric": ""},param);
 	Pregunta.apply(this,[obj]);
+	
 	this.label = obj.label;
+	this.metric = obj.metric;
 	
 	this.esCorrecto = function(rta) {
 		if (rta == null) return false;

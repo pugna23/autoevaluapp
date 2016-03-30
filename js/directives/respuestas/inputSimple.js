@@ -1,6 +1,6 @@
 app.directive('inputSimple', function() {
 	return {
 		restrict: 'E',
-		templateUrl: "js/directives/inputSimple.html"
+		templateUrl: "js/directives/respuestas/inputSimple.html"
 	}
 });
