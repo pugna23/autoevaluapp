@@ -1,0 +1,5 @@
+<div class="input-group" ng-repeat="lab in question.label track by $index" ng-style="{width: {{ question.divLength() }} + '%', float: 'left', padding: '5px'}">
+  <span class="input-group-addon">{{lab}}</span>
+  <input type="text" class="form-control" ng-model="$parent.answered[$index]">
+  <span class="input-group-addon">{{$parent.question.metric[$index]}}</span>
+</div>

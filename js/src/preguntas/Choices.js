@@ -44,7 +44,7 @@ VoF.prototype = ChoiceRadio;
 function ChoiceCheckbox(obj) {
 	Choice.apply(this,[obj]);
 	
-	this.defaultAnswer = falsos(this.respuesta.length);
+	this.defaultAnswer = arrayOf(false,this.respuesta.length);
 	this.formRta = "<choice-checkbox></choice-checkbox>";
 	
 	this.esCorrecto = function(rta) {
@@ -80,11 +80,3 @@ function ChoiceCheckbox(obj) {
 	};
 };
 ChoiceCheckbox.prototype = Choice;
-
-var falsos = function(n) {
-	var list = [];
-	for (var i=1; i <= n; i++) {
-		list.push(false);
-	}
-	return list;
-}

@@ -11,3 +11,10 @@ app.directive('choiceCheckbox', function() {
 		templateUrl: "js/directives/respuestas/choiceCheckbox.html"
 	}
 });
+
+app.directive('choiceSelect', function() {
+	return {
+		restrict: 'E',
+		templateUrl: "js/directives/respuestas/choiceSelect.html"
+	}
+});

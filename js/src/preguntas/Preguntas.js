@@ -46,10 +46,21 @@ function createPregunta(pregunta) {
 	case "INPUT":
 		return new InputSimple(pregunta);
 		break;
+	case "INPUT M":
+		return new InputMultiple(pregunta);
+		break;
 	case "NUMERICINPUT":
 		return new NumericInput(pregunta);
 		break;
 	default:
 		console.error("No coincide con ninguna pregunta el tipo " + pregunta.tipo + "(#" + pregunta.id + ").");
 	}
+}
+
+var arrayOf = function(elemento, n) {
+	var list = [];
+	for (var i=1; i <= n; i++) {
+		list.push(elemento);
+	}
+	return list;
 }
