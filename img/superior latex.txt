@@ -12,3 +12,8 @@
 22	w_{i+1} = w_{i-3} + \frac{4}{3}h[2f(t_i;w_i)- f(t_{i-1};w_{i-1}) + 2f(t_{i-2};w_{i-2})]
 33	G(s) = \frac{3s^{2}-15s}{s^{3} - 5s^{2} + 9s + 15}
 38	w_{i+1} = w_i + \frac{h}{12}[ 5f (t_{i+1};w_{i+1}) + 8f (t_i;w_i) - f(t_{i-1};w_{i-1})]
+53	\begin{cases} 40+t &\text{ si } -\pi/2<t<\pi/2 \\ 40 &\text{ si } \pi/2<t<3\pi/2 \end{cases} \wedge f(t) = f(t+2\pi)
+54	G(s) = \frac{40 (s^2 - 40a)}{(s-40b)(10s^2 + 40s + 40)}
+55	G(s) = \frac{8 (s^2+4)}{(s+1)(s^2 + 6s + 13)}
+62	w_{i+1} = w_{i-1} + \frac{h}{3}[f(t_{i+1};w_{i+1})+4f(t_i;w_i) + f(t_{i-1};w_{i-1
+65	z .\bar{z}-\frac{Re(z^3)}{Re(z)}\geq \left | -4 + 4\sqrt{3}j \right |

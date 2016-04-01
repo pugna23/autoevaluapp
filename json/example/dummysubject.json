@@ -1,60 +1,47 @@
 {
 	"questions": [
 	{"id": 1,
-	"fecha": "13 apr 2010",
-	"pregunta": "F F V F",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"],
-	"respuesta": [false, false, true, false]
+	"fecha": "1 jan 2001",
+	"tipo": "input m",
+	"pregunta": "mayor 3 0.0018 (normal)",
+	"label": ["A =", "B =", "C ="],
+	"respuesta": ["mayor", 3, 0.0018],
+	"metric": ["metros","",""]
 	},
 	{"id": 2,
-	"fecha": "25 may 2013",
-	"pregunta": "F F V V F",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
-	"respuesta": [false, false, true, true, false]
-	},
-	{"id": 3,
-	"fecha": "12 nov 2012",
-	"pregunta": "all false",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3"],
-	"respuesta": [false, false, false]
+	"fecha": "1 jan 2001",
+	"tipo": "input m",
+	"pregunta": "4 25 (no metric)",
+	"label": ["A =", "B >"],
+	"respuesta": [4, 25]
 	},
 	{"id": 4,
-	"fecha": "7 nov 2014",
-	"pregunta": "all true",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
-	"respuesta": [true, true, true, true, true]
+	"fecha": "1 jan 2001",
+	"tipo": "input m",
+	"pregunta": "implicita 4pasos (no label)",
+	"respuesta": ["implicita", "4 pasos"]
 	},
-	{"id": 5,
-	"fecha": "15 jul 2014",
-	"pregunta": "T T F T",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4"],
-	"respuesta": [true, true, false, true]
+	{"id": 83,
+	"fecha": "22 dec 2015",
+	"tipo": "input m",
+	"pregunta": "Sea la ecuación:  z<sup>2</sup> – a z + b = 0 , para que sus raíces sean z<sub>1</sub> = 22 + 12j  y  z<sub>2</sub> = 20 los valores complejos de a y b deben ser:",
+	"label": ["a =", "b ="],
+	"respuesta": ["42 + 12j", "440 + 240j"]
 	},
-	{"id": 6,
-	"fecha": "20 oct 2015",
-	"pregunta": "T T F",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3"],
-	"respuesta": [true, true, false]
+	{"id": 68,
+	"fecha": "5 aug 2010",
+	"tipo": "choiceradio",
+	"pregunta": "Si al calcular <img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Clarge%20%5Cint_%7Ba%7D%5E%7Bb%7D%20f%28x%29dx'> por Trapecios se obtiene el valor exacto, entonces necesariamente:",
+	"opciones": ["&forall;x &isin; (a,b) : f’’(x) = 0","&exist;x &isin; [a,b]: f’’(x) = 0","f es lineal","Ninguna anterior"],
+	"respuesta": "&exist;x &isin; [a,b]: f’’(x) = 0",
+	"justifica": "Como el error es (a-b)/12 h<sup>2</sup> f’’(&phi;) = 0 &rArr; f’’(&phi;) = 0 siendo φ &isin; (a;b)"
 	},
-	{"id": 7,
-	"fecha": "8 feb 2013",
-	"pregunta": "F T F T T",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
-	"respuesta": [false, true, false, true, true]
-	},
-	{"id": 8,
-	"fecha": "8 feb 2015",
-	"pregunta": "T F F F T",
-	"tipo": "choicecb",
-	"opciones": ["Opcion 1", "Opcion 2", "Opcion 3", "Opcion 4", "Opcion 5"],
-	"respuesta": [true, false, false, false, true]
+	{"id": 57,
+	"fecha": "2 oct 2014",
+	"pregunta": "Dada la siguiente tabla: <br><table class='table table-bordered'><tr><th>x</th><th>1</th><th>3</th><th>4</th><th>6</th><th>9</th><th>10</th></tr><tr><td>y</td><td>5</td><td>13</td><td>k</td><td>100</td><td>421</td><td>608</td></tr></table><br> ¿Cuál debe ser el valor de k &isin; R para que por los 6 puntos pase un polinomio de grado 3?",
+	"tipo": "numericinput",
+	"label": "k =",
+	"respuesta": {"value": 26, "precision": 0}
 	}
 	]
 }

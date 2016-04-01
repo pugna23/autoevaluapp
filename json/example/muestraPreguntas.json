@@ -13,6 +13,14 @@
 	"tipo": "",
 	"respuesta": "",
 	"justifica": ""
+	},
+	{"id": 3,
+	"fecha": "1 jan 2001",
+	"tipo": "input m",
+	"pregunta": "blablabla"
+	"label": ["A =", "B =", "C ="],
+	"respuesta": ["mayor", 3, 0.0018]
+	"metric": ["metros","",""]
 	}
 	]
 }
