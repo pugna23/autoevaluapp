@@ -1,26 +1,26 @@
 {
 	"questions": [
+	{"id": 46,
+	"fecha": "",
+	"pregunta": "",
+	"tipo": "input m",
+	"label": [""],
+	"respuesta": [],
+	"metric": [],
+	"justifica": ""
+	},
 	{"id": 1,
 	"fecha": "",
 	"pregunta": "",
-	"tipo": "",
-	"respuesta": "",
-	"justifica": ""
+	"tipo": "numericinput",
+	"respuesta": { "value": , "precision": }
 	},
-	{"id": 2,
+	{"id": 8,
 	"fecha": "",
 	"pregunta": "",
-	"tipo": "",
-	"respuesta": "",
-	"justifica": ""
-	},
-	{"id": 3,
-	"fecha": "1 jan 2001",
-	"tipo": "input m",
-	"pregunta": "blablabla"
-	"label": ["A =", "B =", "C ="],
-	"respuesta": ["mayor", 3, 0.0018]
-	"metric": ["metros","",""]
+	"tipo": "ChoiceRadio",
+	"opciones": [""],
+	"respuesta": ""
 	}
 	]
 }

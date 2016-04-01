@@ -1,26 +1,5 @@
 {
 	"questions": [
-	{"id": 1,
-	"fecha": "1 jan 2001",
-	"tipo": "input m",
-	"pregunta": "mayor 3 0.0018 (normal)",
-	"label": ["A =", "B =", "C ="],
-	"respuesta": ["mayor", 3, 0.0018],
-	"metric": ["metros","",""]
-	},
-	{"id": 2,
-	"fecha": "1 jan 2001",
-	"tipo": "input m",
-	"pregunta": "4 25 (no metric)",
-	"label": ["A =", "B >"],
-	"respuesta": [4, 25]
-	},
-	{"id": 4,
-	"fecha": "1 jan 2001",
-	"tipo": "input m",
-	"pregunta": "implicita 4pasos (no label)",
-	"respuesta": ["implicita", "4 pasos"]
-	},
 	{"id": 83,
 	"fecha": "22 dec 2015",
 	"tipo": "input m",
@@ -42,6 +21,30 @@
 	"tipo": "numericinput",
 	"label": "k =",
 	"respuesta": {"value": 26, "precision": 0}
+	},
+	{"id": 76,
+	"fecha": "18 dec 2012",
+	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
+	"tipo": "choiceradio",
+	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
+	"respuesta": "Ninguna de las anteriores",
+	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
+	},
+	{"id": 76,
+	"fecha": "18 dec 2012",
+	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
+	"tipo": "choiceradio",
+	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
+	"respuesta": "Ninguna de las anteriores",
+	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
+	},
+	{"id": 76,
+	"fecha": "18 dec 2012",
+	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
+	"tipo": "choiceradio",
+	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
+	"respuesta": "Ninguna de las anteriores",
+	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
 	}
 	]
 }
