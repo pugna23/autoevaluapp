@@ -1,50 +1,50 @@
 {
 	"questions": [
-	{"id": 83,
-	"fecha": "22 dec 2015",
-	"tipo": "input m",
-	"pregunta": "Sea la ecuación:  z<sup>2</sup> – a z + b = 0 , para que sus raíces sean z<sub>1</sub> = 22 + 12j  y  z<sub>2</sub> = 20 los valores complejos de a y b deben ser:",
-	"label": ["a =", "b ="],
-	"respuesta": ["42 + 12j", "440 + 240j"]
+	{"id": 43,
+		"fecha": "15 dec 2011",
+		"pregunta": "El problema de valor inicial:  y’(t) = - ty con y(0) = 1<br>Cumple la condición de Lipschitz en R = { (t,y) &isin; R<sup>2</sup> /  0 &le; t &le; 3 &and; 0 &le; y &le; 2 } con la menor constante:",
+		"tipo": "ChoiceCB",
+		"opciones": ["L = 1","L = 2","L = 3","Otro valor de L","No cumple la <br>condición de Lipschitz"],
+		"respuesta":[false,false,true,false,false],
+		"justifica": "| f(t,y<sub>1</sub>) – f(t,y<sub>2</sub>) | = | -t y<sub>1</sub> + t y<sub>2</sub> | = | -t (y<sub>1</sub> – y<sub>2</sub>) | &le;  3 |y<sub>1</sub> – y<sub>2</sub>| &rArr; cumple con L = 3."
 	},
-	{"id": 68,
-	"fecha": "5 aug 2010",
-	"tipo": "choiceradio",
-	"pregunta": "Si al calcular <img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Clarge%20%5Cint_%7Ba%7D%5E%7Bb%7D%20f%28x%29dx'> por Trapecios se obtiene el valor exacto, entonces necesariamente:",
-	"opciones": ["&forall;x &isin; (a,b) : f’’(x) = 0","&exist;x &isin; [a,b]: f’’(x) = 0","f es lineal","Ninguna anterior"],
-	"respuesta": "&exist;x &isin; [a,b]: f’’(x) = 0",
-	"justifica": "Como el error es (a-b)/12 h<sup>2</sup> f’’(&phi;) = 0 &rArr; f’’(&phi;) = 0 siendo φ &isin; (a;b)"
+	{"id": 44,
+		"fecha": "15 dec 2011",
+		"pregunta": "Los métodos de Gauss-Seidel y Jacobi para resolver sistemas de ecuaciones lineales convergen solo para matrices de coeficientes A que sean:",
+		"tipo": "Choicecb",
+		"opciones": ["Simétricas","Con norma = 1","Con radio<br>espectral > 1","Diagonal <br>dominante","Depende del <br>vector inicial <br>tomado","Cualquier matriz<br> cuadrada e <br>inversible"],
+		"respuesta":[false,false,false,true,false,false]
 	},
-	{"id": 57,
-	"fecha": "2 oct 2014",
-	"pregunta": "Dada la siguiente tabla: <br><table class='table table-bordered'><tr><th>x</th><th>1</th><th>3</th><th>4</th><th>6</th><th>9</th><th>10</th></tr><tr><td>y</td><td>5</td><td>13</td><td>k</td><td>100</td><td>421</td><td>608</td></tr></table><br> ¿Cuál debe ser el valor de k &isin; R para que por los 6 puntos pase un polinomio de grado 3?",
-	"tipo": "numericinput",
-	"label": "k =",
-	"respuesta": {"value": 26, "precision": 0}
+	{"id": 75,
+	"fecha": "15 dec 2011",
+	"pregunta": "La siguiente fórmula corresponde a un método de resolución de ecuaciones diferenciales es:<br><img src='img/082032-22.gif'>",
+	"tipo": "choicecb",
+	"opciones": ["De paso simple","De 2 pasos", "De 3 pasos", "De 4 pasos", "Explícita", "Implícita"],
+	"respuesta": [false,false,false,true,true,false],
+	"justifica": "La fórmula dada corresponde a un método de 4 pasos ya que intervienen 4 valores anteriores. Es una fórmula explícita ya que no interviene wi+1 en los cálculos"
 	},
-	{"id": 76,
+	{"id": 75,
+	"fecha": "15 dec 2011",
+	"pregunta": "La siguiente fórmula corresponde a un método de resolución de ecuaciones diferenciales es:<br><img src='img/082032-22.gif'>",
+	"tipo": "choicecb",
+	"opciones": ["De paso simple","De 2 pasos", "De 3 pasos", "De 4 pasos", "Explícita", "Implícita"],
+	"respuesta": [false,false,false,true,true,false],
+	"justifica": "La fórmula dada corresponde a un método de 4 pasos ya que intervienen 4 valores anteriores. Es una fórmula explícita ya que no interviene wi+1 en los cálculos"
+	},
+	{"id": 78,
 	"fecha": "18 dec 2012",
-	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
-	"tipo": "choiceradio",
-	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
-	"respuesta": "Ninguna de las anteriores",
-	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
-	},
-	{"id": 76,
+	"img": "img/082032-78.png",
+	"pregunta": "¿Qué transferencia G(s) puede corresponder a la gráfica?",
+	"tipo": "choicecb",
+	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B4s&plus;4%7D%7B%28s&plus;3%29%28s-1%29%7D'>","<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B5%28s&plus;1%29%7D%7B%28s&plus;3%29%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B2%28s&plus;1%29%7D%7B%28s&plus;3%29%28s%5E2-2s&plus;5%29%7D'>","<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B3%28s&plus;1%29%7D%7B%28s&plus;3%29%28s-1%29%5E2%7D'>"],
+	"respuesta": [false,false,true,false]
+	},{"id": 78,
 	"fecha": "18 dec 2012",
-	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
-	"tipo": "choiceradio",
-	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
-	"respuesta": "Ninguna de las anteriores",
-	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
-	},
-	{"id": 76,
-	"fecha": "18 dec 2012",
-	"pregunta": "Sea f(t) = t si t &isin; [0,2]  y f(t) = 0 si t &notin; [0,2] entonces:",
-	"tipo": "choiceradio",
-	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7De%5E%7B-2s%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7Bs%5E2%7D%281%20-%20e%5E%7B-2s%7D%29'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20%5Cmathcal%7BL%7D%5Bf%28t%29%5D%20%3D%20%5Cfrac%7B1%7D%7B%28s-2%29%5E2%7D'>", "Ninguna de las anteriores"],
-	"respuesta": "Ninguna de las anteriores",
-	"justifica": "La correcta es: -2/s e<sup>-2s</sup> + (1 – e<sup>-2s</sup>) /s<sup>2</sup>"
+	"img": "img/082032-78.png",
+	"pregunta": "¿Qué transferencia G(s) puede corresponder a la gráfica?",
+	"tipo": "choicecb",
+	"opciones": ["<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B4s&plus;4%7D%7B%28s&plus;3%29%28s-1%29%7D'>","<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B5%28s&plus;1%29%7D%7B%28s&plus;3%29%7D'>", "<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B2%28s&plus;1%29%7D%7B%28s&plus;3%29%28s%5E2-2s&plus;5%29%7D'>","<img src='http://latex.codecogs.com/gif.latex?%5Cfn_cm%20G%28s%29%20%3D%20%5Cfrac%7B3%28s&plus;1%29%7D%7B%28s&plus;3%29%28s-1%29%5E2%7D'>"],
+	"respuesta": [false,false,true,false]
 	}
 	]
 }

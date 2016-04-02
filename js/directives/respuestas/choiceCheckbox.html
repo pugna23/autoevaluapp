@@ -1,6 +1,6 @@
-<div class="input-group choice rta-multiple" ng-repeat="opt in question.opciones" ng-style="{width: {{ question.optionLength() }} + '%'}">
-  <span class="input-group-addon">
+<div class="input-group choice" ng-repeat="opt in question.opciones" ng-style="{width: {{ question.optionLength() }} + '%', float: 'left', height: '54px'}">
+  <span class="input-group-addon checkbox-addon">
   	<input type="checkbox" ng-model='$parent.answered[$index]'>
   </span>
-  <span class="input-group-addon" ng-bind-html="opt"></span>
+  <span class="input-group-addon checkbox-addon" ng-bind-html="opt"></span>
 </div>
